@@ -51,7 +51,7 @@
                         bindings = <
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-   ___   ___   ___   &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))        &kp LC(LA(PG_UP)) &kp LA(TAB) &kp UP  XXX      &kp C_BRI_UP  &kp LG(EQUALS)
+   ___   ___   ___   &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))        &kp LC(LA(PG_UP)) &kp LA(TAB) &kp UP  XXX      &kp C_BRI_UP  &kp LG(EQUAL)
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
 &kp LCTRL &kp LSHFT &kp LALT &kp LGUI  XXX      XXX                       &kp LC(LA(PG_DN))  &kp LEFT &kp DOWN &kp RIGHT &kp C_BRI_DN  &kp LG(MINUS)
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
