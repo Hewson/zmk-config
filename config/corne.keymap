@@ -148,7 +148,7 @@
             key-positions = <1 5>;
             bindings = <&kp LG(S)>;
         };
-        combo_cmdS {
+        combo_cmdQ {
             timeout-ms = <25>;
             key-positions = <1 10>;
             bindings = <&kp LG(Q)>;
