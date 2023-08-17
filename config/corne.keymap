@@ -13,6 +13,11 @@
 #define RAISE   2
 #define ADJUST  3
 
+#define HYPESC &ht LS(LG(LC(LALT))) ESC
+#define RAYCAST &kp LS(LG(LC(LA(SPACE))))
+#define MEHN &ht LS(LC(LALT)) N 
+
+
 #define XXX &none
 #define ___ &trans
 
@@ -38,9 +43,9 @@
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
    &kp TAB  &kp B    &kp L    &kp D    &kp W    &kp Z                               &kp SEMI &kp F    &kp O     &kp U   &kp J    &kp MINUS
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   &kp ESC  &kp N    &kp R    &lt 3 T  &lt 1 S    &kp G                            &kp Y   &lt 2 H  &lt 1 A   &kp E   &kp I    &kp SQT
+   HYPESC   MEHN     &kp R    &lt 3 T  &lt 1 S  &kp G                            &kp Y   &lt 2 H  &lt 1 A   &kp E   &kp I    &kp SQT
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-&kp LC(LS(LA(LG(SPACE))))&kp Q &kp X   &kp M  &kp C &kp V                            &kp K    &kp P    &kp COMMA &kp DOT &kp FSLH &kp RET
+   RAYCAST  &kp Q    &kp X    &kp M    &kp C    &kp V                            &kp K    &kp P    &kp COMMA &kp DOT &kp FSLH &kp RET
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     &kp LGUI &kp LSHFT &kp LSHFT                 &kp SPACE &kp SPACE &kp BSPC
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
@@ -51,11 +56,11 @@
                         bindings = <
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-   ___   ___   ___   &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))        &kp LC(LA(PG_UP)) &kp LA(TAB) &kp UP  XXX      &kp C_BRI_UP  &kp LG(EQUAL)
+   ___   ___   ___   &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))        &kp LC(LA(PG_UP)) &kp LG(TAB) &kp UP  XXX      &kp C_BRI_UP  &kp LG(EQUAL)
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
 &kp LCTRL &kp LSHFT &kp LALT &kp LGUI  XXX      XXX                       &kp LC(LA(PG_DN))  &kp LEFT &kp DOWN &kp RIGHT &kp C_BRI_DN  &kp LG(MINUS)
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-&kp LS(LG(C)) &kp LG(Z) &kp X  &kp M  &kp C &kp V                                   &kp DEL    XXX  &kp C_VOL_DN &kp C_VOL_UP XXX ___
+&kp LS(LG(C)) &kp LG(Z) &kp LG(X) &kp LG(C) &kp LG(V) &kp LG(B)                                   &kp DEL    XXX  &kp C_VOL_DN &kp C_VOL_UP XXX ___
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
@@ -78,7 +83,7 @@
                 };
 
                 adjust_layer {
-                        bindings = <
+                        bindings = <                    
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
    XXX      XXX      XXX      XXX      XXX      XXX                                &kp MINUS &kp N7   &kp N8   &kp N9   &kp LS(N5)       &kp LS(EQUAL)
