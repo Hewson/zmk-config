@@ -21,12 +21,9 @@
 #define XXX &none
 #define ___ &trans
 
-#define QUICK_TAP_MS 175
-
 &lt {  // layer-tap config
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
-    quick-tap-ms = <QUICK_TAP_MS>;
 };
 
 / {
