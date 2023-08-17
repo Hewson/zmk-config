@@ -26,7 +26,135 @@
     tapping-term-ms = <200>;
 };
 
+//┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
+//     0       1        2        3        4        5                                   6        7        8        9        10       11
+//├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
+//    12       13       14       15       16       17                                  18       19       20       21       22       23
+//├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
+//    24       25       26       27       28       29                                  30       31       32       33       34       35
+//└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
+//                                   36       37       38                        39       40        41
+                              // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
+
 / {
+    macros {
+        auto_brackets: auto_brackets {
+            label = "auto_brackets";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LS(N9)>
+                , <&kp LS(N0)>
+                , <&kp LEFT>
+                ;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+        
+        combo_back {
+            timeout-ms = <25>;
+            key-positions = <13 14 15>;
+            bindings = <&kp LG(LBRC)>;
+        };
+        combo_back {
+            timeout-ms = <25>;
+            key-positions = <14 15 16>;
+            bindings = <&kp LG(RBRC)>;
+        };
+        combo_find {
+            timeout-ms = <25>;
+            key-positions = <15 16 17>;
+            bindings = <&kp LG(F)>;
+        };
+        combo_brackets {
+            timeout-ms = <25>;
+            key-positions = <19 20 21>;
+            bindings = <&auto_brackets>;
+        };
+        combo_cmdComma {
+            timeout-ms = <25>;
+            key-positions = <6 18>;
+            bindings = <&kp LG(COMMA)>;
+        };
+        combo_cmdK {
+            timeout-ms = <25>;
+            key-positions = <6 7>;
+            bindings = <&kp LG(K)>;
+        };
+        combo_minimize {
+            timeout-ms = <25>;
+            key-positions = <3 4 5>;
+            bindings = <&kp LG(M)>;
+        };
+        combo_undo {
+            timeout-ms = <25>;
+            key-positions = <25 26>;
+            bindings = <&kp LG(Z)>;
+        };
+        combo_copy {
+            timeout-ms = <25>;
+            key-positions = <26 27>;
+            bindings = <&kp LG(C)>;
+        };
+        combo_paste {
+            timeout-ms = <25>;
+            key-positions = <26 28>;
+            bindings = <&kp LG(V)>;
+        };
+        combo_cut {
+            timeout-ms = <25>;
+            key-positions = <25 27>;
+            bindings = <&kp LG(X)>;
+        };
+        combo_selall {
+            timeout-ms = <25>;
+            key-positions = <25 29>;
+            bindings = <&kp LG(A)>;
+        };
+        combo_cmdL {
+            timeout-ms = <25>;
+            key-positions = <20 21 22>;
+            bindings = <&kp LG(L)>;
+        };
+        combo_cmdO {
+            timeout-ms = <25>;
+            key-positions = <6 8>;
+            bindings = <&kp LG(O)>;
+        };
+        combo_cmdN {
+            timeout-ms = <25>;
+            key-positions = <6 19>;
+            bindings = <&kp LG(N)>;
+        };
+        combo_cmdW {
+            timeout-ms = <25>;
+            key-positions = <4 5>;
+            bindings = <&kp LG(W)>;
+        };
+        combo_cmdR {
+            timeout-ms = <25>;
+            key-positions = <5 17>;
+            bindings = <&kp LG(R)>;
+        };
+        combo_cmdHyphen {
+            timeout-ms = <25>;
+            key-positions = <2 3 4>;
+            bindings = <&kp LG(MINUS)>;
+        };
+        combo_cmdS {
+            timeout-ms = <25>;
+            key-positions = <1 5>;
+            bindings = <&kp LG(S)>;
+        };
+        combo_cmdS {
+            timeout-ms = <25>;
+            key-positions = <1 10>;
+            bindings = <&kp LG(Q)>;
+        };
+    };
+
     behaviors {
         gqt: global-quick-tap {
             compatible = "zmk,behavior-hold-tap";
