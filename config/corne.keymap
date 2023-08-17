@@ -9,6 +9,18 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+        
         keymap {
                 compatible = "zmk,keymap";
 
@@ -19,12 +31,19 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUfI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp TAB   &kp B &kp L &kp D &kp W &kp Z   &kp SEMI &kp F  &kp O  &kp U   &kp J    &kp MINUS
-   &kp ESC &kp N &kp R &kp T &kp S &kp G     &kp Y &kp H  &kp A     &kp E   &kp I &kp SQT
-   &kp LSHFT &kp Q &kp X &kp M &kp C &kp V   &kp K &kp P  &kp COMMA &kp DOT &kp FSLH &kp RET
-                  &kp LGUI &kp LSHFT &kp LSHFT   &kp SPACE &kp SPACE &kp BSPC
+
+//┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
+   &kp TAB  &kp B    &kp L    &kp D    &kp W    &kp Z                               &kp SEMI &kp F    &kp O     &kp U   &kp J    &kp MINUS
+//├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
+   &kp ESC  &kp N    &kp R    &kp T    &kp S    &kp G                               &kp Y    &kp H    &kp A     &kp E   &kp I    &kp SQT
+//├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
+   &kp LSHFT &kp Q   &kp X    &kp M    &kp C    &kp V                               &kp K    &kp P    &kp COMMA &kp DOT &kp FSLH &kp RET
+//└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
+                                    &kp LGUI &kp LSHFT &kp LSHFT                 &kp SPACE &kp SPACE &kp BSPC
+                                // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
                         >;
                 };
+
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
