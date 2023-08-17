@@ -63,6 +63,7 @@
                 };
 
                 raise_layer {
+                        bindings = <
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
    XXX     &kp LS(N7) &kp LS(N4) &kp LS(N5) &kp LS(LBRC) &kp LS(RBRC)               XXX      XXX      &kp F4   XXX      XXX      XXX
@@ -77,6 +78,7 @@
                 };
 
                 adjust_layer {
+                        bindings = <
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
    XXX      XXX      XXX      XXX      XXX      XXX                                &kp MINUS &kp N7   &kp N8   &kp N9   &kp LS(N5)       &kp LS(EQUAL)
