@@ -20,7 +20,7 @@
             bindings = <&kp>, <&kp>;
         };
     };
-        
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -37,7 +37,7 @@
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
    &kp ESC  &kp N    &kp R    &kp T    &kp S    &kp G                               &kp Y    &kp H    &kp A     &kp E   &kp I    &kp SQT
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   &kp LSHFT &kp Q   &kp X    &kp M    &kp C    &kp V                               &kp K    &kp P    &kp COMMA &kp DOT &kp FSLH &kp RET
+&kp LC(LS(LA(LG(SPACE))))&kp Q &kp X  &kp M  &kp C &kp V                            &kp K    &kp P    &kp COMMA &kp DOT &kp FSLH &kp RET
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     &kp LGUI &kp LSHFT &kp LSHFT                 &kp SPACE &kp SPACE &kp BSPC
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
