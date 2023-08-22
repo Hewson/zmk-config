@@ -141,7 +141,7 @@
         combo_cmdHyphen {
             timeout-ms = <25>;
             key-positions = <2 3 4>;
-            bindings = <&kp LG(MINUS)>;
+            bindings = <&kp LA(LC(LS(LG(MINUS))))>;
         };
         combo_cmdS {
             timeout-ms = <25>;
