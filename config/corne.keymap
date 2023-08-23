@@ -23,7 +23,7 @@
 
 &lt {  // layer-tap config
     flavor = "tap-preferred";
-    tapping-term-ms = <200>;
+    tapping-term-ms = <250>;
 };
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
@@ -56,12 +56,12 @@
         combo_back {
             timeout-ms = <25>;
             key-positions = <13 14 15>;
-            bindings = <&kp LG(LBRC)>;
+            bindings = <&kp LG(LBKT)>;
         };
         combo_fwds {
             timeout-ms = <25>;
             key-positions = <14 15 16>;
-            bindings = <&kp LG(RBRC)>;
+            bindings = <&kp LG(RBKT)>;
         };
         combo_find {
             timeout-ms = <25>;
@@ -145,7 +145,7 @@
         };
         combo_cmdS {
             timeout-ms = <25>;
-            key-positions = <1 5>;
+            key-positions = <17 29>;
             bindings = <&kp LG(S)>;
         };
         combo_cmdQ {
