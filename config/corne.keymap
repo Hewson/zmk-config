@@ -16,6 +16,8 @@
 #define HYPESC &gqt LS(LG(LC(LALT))) ESC
 #define RAYCAST &kp LS(LG(LC(LA(SPACE))))
 #define MEHN &gqt LS(LC(LALT)) N 
+#define DELWORD &kp LA(BSPC)
+#define RTHUMB &gqt RGUI BSPC
 
 
 #define XXX &none
@@ -200,7 +202,7 @@
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
    RAYCAST  &kp Q    &kp X    &kp M    &kp C    &kp V                            &kp K    &kp P    &kp COMMA &kp DOT &kp FSLH &kp RET
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    &kp LGUI &kp DEL &kp LSHFT                 &kp SPACE &kp BSPC &kp RGUI
+                                    &kp LGUI &kp DEL &kp LSHFT                 &kp SPACE  DELWORD  RTHUMB
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
                         >;
                 };
@@ -209,7 +211,7 @@
                         bindings = <
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-   ___   ___   ___   &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))        &kp LC(LA(PG_UP)) &kp LG(TAB) &kp UP  XXX      &kp C_BRI_UP  &kp LG(EQUAL)
+   ___   ___   ___   &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))        &kp LC(LA(PG_UP)) &kp LG(TAB) &kp UP &kp C_PP &kp  C_BRI_UP  &kp LG(EQUAL)
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
 &kp LCTRL &kp LSHFT &kp LALT &kp LGUI  XXX      XXX                       &kp LC(LA(PG_DN))  &kp LEFT &kp DOWN &kp RIGHT &kp C_BRI_DN  &kp LG(MINUS)
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
