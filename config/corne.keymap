@@ -16,8 +16,8 @@
 #define HYPESC &gqt LS(LG(LC(LALT))) ESC
 #define RAYCAST &kp LS(LG(LC(LA(SPACE))))
 #define MEHN &gqt LS(LC(LALT)) N 
-#define DELWORD &kp LA(BSPC)
-#define RTHUMB &gqt RGUI BSPC
+#define DELWORD &kp BSPC
+#define RTHUMB &gqt RGUI LA(BSPC)
 
 
 #define XXX &none
