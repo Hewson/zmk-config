@@ -24,7 +24,7 @@
 #define LOWER   1
 #define RAISE   2
 #define ADJUST  3
-#define CANARY  4
+#define TEST  4
 
 #define HYPESC &gqt LS(LG(LC(LALT))) ESC
 #define RAYCAST &kp LS(LG(LC(LA(SPACE))))
@@ -272,17 +272,17 @@
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
                         >;
                 };
-                canary_layer {
+                test_layer {
                         bindings = <                    
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-   &kp TAB  &kp W    &kp L    &kp Y    &kp P    &kp B                               &kp Z    &kp F    &kp O     &kp U   &kp SEMI    &kp MINUS
+   &kp TAB  &kp B    &kp L    &kp D    &kp W    &kp Z                               &kp SEMI &kp F    &kp O     &kp U   &kp J    &kp MINUS
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   HYPESC   &kp C    &kp R    &hl_l 3 S  &hl_l 1 T  &kp G                           &kp M    &hl_r 2 N  &hl_r 1 E   &kp I   &kp A    &kp SQT
+   HYPESC   MEHN     &kp R    &hl_l 3 T  &hl_l 1 S  &kp G                           &kp Y   &hl_r 2 H  &hl_r 1 A   &kp E   &kp I    &kp SQT
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   RAYCAST  &kp Q    &kp J    &kp V    &kp D    &kp K                               &kp X    &kp H    &kp COMMA &kp DOT &kp FSLH &kp RET
+   RAYCAST  &kp Q    &kp X    &kp M    &kp C    &kp V                            &kp K    &kp P    &kp COMMA &kp DOT &kp FSLH &kp RET
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    &kp LGUI &kp DEL &kp LSHFT                    &kp SPACE  DELWORD RTHUMB  
+                                    &kp LGUI &kp LSHFT &kp DEL                     DELWORD RTHUMB &kp SPACE    
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
                         >;
                 };
