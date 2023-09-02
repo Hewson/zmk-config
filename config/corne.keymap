@@ -28,7 +28,7 @@
 
 #define HYPESC &gqt LS(LG(LC(LALT))) ESC
 #define RAYCAST &kp LS(LG(LC(LA(SPACE))))
-#define MEHN &gqt LS(LC(LALT)) N 
+#define MEHR &gqt LS(LC(LALT)) R 
 #define DELWORD &kp BSPC
 #define RTHUMB &gqt RGUI LA(BSPC)
 
@@ -217,11 +217,11 @@
                         bindings = <
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-   &kp TAB  &kp B    &kp L    &kp D    &kp W    &kp Z                               &kp SEMI &kp F    &kp O     &kp U   &kp J    &kp MINUS
+   &kp TAB  &kp W    &kp G    &kp D    &kp F    &kp B                               &kp Q    &kp L    &kp U     &kp O   &kp Y    &kp MINUS
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   HYPESC   MEHN     &kp R    &hl_l 3 T  &hl_l 1 S  &kp G                           &kp Y   &hl_r 2 H  &hl_r 1 A   &kp E   &kp I    &kp SQT
+   HYPESC   MEHR     &kp S    &hl_l 3 T  &hl_l 1 H  &kp K                           &kp J   &hl_r 2 N  &hl_r 1 E   &kp A   &kp I    &kp SQT
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   RAYCAST  &kp Q    &kp X    &kp M    &kp C    &kp V                            &kp K    &kp P    &kp COMMA &kp DOT &kp FSLH &kp RET
+   RAYCAST  &kp X    &kp C    &kp M    &kp P    &kp V                               &kp Z    &kp SEMI    &kp COMMA &kp DOT &kp FSLH &kp RET
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     &kp LGUI &kp LSHFT &kp DEL                   RTHUMB &kp SPACE DELWORD   
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
