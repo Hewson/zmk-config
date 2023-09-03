@@ -24,7 +24,6 @@
 #define LOWER   1
 #define RAISE   2
 #define ADJUST  3
-#define TEST  4
 
 #define HYPESC &gqt LS(LG(LC(LALT))) ESC
 #define RAYCAST &kp LS(LG(LC(LA(SPACE))))
@@ -178,7 +177,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
-            global-quick-tap-ms = <200>;         // requires PR #1387
+            global-quick-tap-ms = <100>;         // requires PR #1387
             bindings = <&kp>, <&kp>;
         };
         hl_l: homerow_mods_left {
@@ -190,7 +189,7 @@
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
-            global-quick-tap-ms = <200>;         // requires PR #1387
+            global-quick-tap-ms = <100>;         // requires PR #1387
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
             hold-trigger-on-release;             // requires PR #1423
         };
@@ -204,7 +203,7 @@
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick_tap_ms = <175>;
-            global-quick-tap-ms = <200>;         // requires PR #1387
+            global-quick-tap-ms = <100>;         // requires PR #1387
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
             hold-trigger-on-release;             // requires PR #1423
         };
@@ -223,7 +222,8 @@
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
    RAYCAST  &kp Q    &kp X    &kp M    &kp C    &kp V                            &kp K    &kp P    &kp COMMA &kp DOT &kp FSLH &kp RET
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘  
-                                    &kp LGUI &kp LSHFT &kp DEL                   RTHUMB &kp SPACE DELWORD   
+                                   //&kp LGUI &kp LSHFT &kp DEL                   RTHUMB &kp SPACE DELWORD   
+                                   &kp LGUI  &kp DEL &kp LSHFT                   &kp SPACE DELWORD RTHUMB  
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
                         >;
                 };
@@ -269,20 +269,6 @@
    XXX      XXX      XXX      XXX      XXX      XXX                                 &kp N0   &kp N1   &kp N2   &kp N3   &kp LS(N2)       &kp LG(RET)
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___      ___       ___                       ___      ___      ___
-                                // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
-                        >;
-                };
-                test_layer {
-                        bindings = <                    
-
-//┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-   &kp TAB  &kp B    &kp L    &kp D    &kp W    &kp Z                               &kp SEMI &kp F    &kp O     &kp U   &kp J    &kp MINUS
-//├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   HYPESC   MEHN     &kp R    &hl_l 3 T  &hl_l 1 S  &kp G                           &kp Y   &hl_r 2 H  &hl_r 1 A   &kp E   &kp I    &kp SQT
-//├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   RAYCAST  &kp Q    &kp X    &kp M    &kp C    &kp V                            &kp K    &kp P    &kp COMMA &kp DOT &kp FSLH &kp RET
-//└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    &kp LGUI &kp LSHFT &kp DEL                   RTHUMB &kp SPACE DELWORD   
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
                         >;
                 };
