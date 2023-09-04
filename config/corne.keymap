@@ -220,10 +220,9 @@
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
    HYPESC   MEHN     &kp R    &hl_l 3 T  &hl_l 1 S  &kp G                           &kp Y   &hl_r 2 H  &hl_r 1 A   &kp E   &kp I    &kp SQT
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   RAYCAST  &kp Q    &kp X    &kp M    &kp C    &kp V                            &kp K    &kp P    &kp COMMA &kp DOT &kp FSLH &kp RET
+   RAYCAST  &kp Q    &kp X    &kp M    &kp C    &kp V                               &kp K    &kp P    &kp COMMA &kp DOT &kp FSLH &kp RET
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘  
-                                   //&kp LGUI &kp LSHFT &kp DEL                   RTHUMB &kp SPACE DELWORD 
-                                   &kp LGUI &kp DEL &kp LSHFT                    &kp SPACE DELWORD RTHUMB  
+                                   v&kp LGUI &kp LSHFT &kp DEL                   RTHUMB &kp SPACE DELWORD   
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
                         >;
                 };
