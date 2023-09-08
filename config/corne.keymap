@@ -28,8 +28,7 @@
 #define HYPESC &gqt LS(LG(LC(LALT))) ESC
 #define RAYCAST &kp LS(LG(LC(LA(SPACE))))
 #define MEHN &gqt LS(LC(LALT)) N
-#define DELWORD &kp BSPC
-#define RTHUMB &gqt RGUI LA(BSPC)
+#define DELWORD &kp LA(BSPC)
 
 
 #define XXX &none
@@ -180,6 +179,32 @@
             global-quick-tap-ms = <150>;         // requires PR #1387
             bindings = <&kp>, <&kp>;
         };
+        hr_l: homerow_mods_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_LEFT";
+            #binding-cells = <2>;
+            bindings = <&kp>,  <&kp>;
+
+            flavor = "balanced";
+            tapping-term-ms = <HM_TAPPING_TERM>;
+            quick-tap-ms = <175>;                // repeat on tap-into-hold
+            global-quick-tap-ms = <150>;         // requires PR #1387
+            hold-trigger-key-positions = <KEYS_R KEYS_T>;
+            hold-trigger-on-release;             // requires PR #1423
+        };
+        hr_r: homerow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_RIGHT";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+
+            flavor = "balanced";
+            tapping-term-ms = <HM_TAPPING_TERM>;
+            quick_tap_ms = <175>;
+            global-quick-tap-ms = <150>;         // requires PR #1387
+            hold-trigger-key-positions = <KEYS_L KEYS_T>;
+            hold-trigger-on-release;             // requires PR #1423
+        };
         hl_l: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LEFT";
@@ -193,7 +218,6 @@
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
             hold-trigger-on-release;             // requires PR #1423
         };
-
         hl_r: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_RIGHT";
@@ -218,11 +242,11 @@
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
    &kp TAB  &kp B    &kp L    &kp D    &kp W    &kp Z                               &kp SEMI &kp F    &kp O     &kp U   &kp J    &kp MINUS
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   HYPESC   MEHN     &kp R    &hl_l 3 T  &hl_l 1 S  &kp G                           &kp Y   &hl_r 2 H  &hl_r 1 A   &kp E   &kp I    &kp SQT
+   HYPESC   MEHN     &kp R    &hl_l 3 T  &hl_l 1 S  &kp G                           &kp Y   &hl_r 2 H &kp A    &kp E  &hr_r RGUI I  &kp SQT
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
    RAYCAST  &kp Q    &kp X    &kp M    &kp C    &kp V                               &kp K    &kp P    &kp COMMA &kp DOT &kp FSLH &kp RET
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘  
-                                   &kp LGUI &kp LSHFT &kp DEL                     RTHUMB &kp SPACE DELWORD
+                                   &kp LGUI &kp LSHFT &kp DEL                    DELWORD &kp SPACE BSPC
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
                         >;
                 };
