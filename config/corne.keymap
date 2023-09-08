@@ -207,7 +207,7 @@
         };
         hl_l: homerow_layers_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_LEFT";
+            label = "HOMEROW_LAYERS_LEFT";
             #binding-cells = <2>;
             bindings = <&mo>,  <&kp>;
 
@@ -220,7 +220,7 @@
         };
         hl_r: homerow_layers_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_RIGHT";
+            label = "HOMEROW_LAYERS_RIGHT";
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
 
@@ -246,7 +246,7 @@
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
    RAYCAST  &kp Q    &kp X    &kp M    &kp C    &kp V                               &kp K    &kp P    &kp COMMA &kp DOT &kp FSLH &kp RET
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘  
-                                   &kp LGUI &kp LSHFT &kp DEL                    DELWORD  &kp SPACE BSPC
+                                   &kp LGUI &kp LSHFT &kp DEL                    DELWORD  &kp SPACE &kp BSPC
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
                         >;
                 };
