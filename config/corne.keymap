@@ -205,7 +205,7 @@
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
             hold-trigger-on-release;             // requires PR #1423
         };
-        hl_l: homerow_mods_left {
+        hl_l: homerow_layers_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LEFT";
             #binding-cells = <2>;
@@ -218,7 +218,7 @@
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
             hold-trigger-on-release;             // requires PR #1423
         };
-        hl_r: homerow_mods_right {
+        hl_r: homerow_layers_right {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_RIGHT";
             #binding-cells = <2>;
