@@ -68,7 +68,7 @@
         
         combo_find {
             timeout-ms = <35>;
-            key-positions = <15 16 17>;
+            key-positions = <7 8 9>;
             bindings = <&kp LA(LS(LC(S)))>;
         };
         combo_back {
