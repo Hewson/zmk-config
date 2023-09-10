@@ -24,11 +24,13 @@
 #define LOWER   1
 #define RAISE   2
 #define ADJUST  3
+#define RSTHD   4
 
 #define HYPESC &gqt LS(LG(LC(LALT))) ESC
 #define RAYCAST &kp LS(LG(LC(LA(SPACE))))
 #define MEHN &gqt LS(LC(LALT)) N
 #define DELWORD &kp LA(BSPC)
+#define HYPSPC &gqt LS(LG(LC(LALT))) SPACE
 
 
 #define XXX &none
@@ -246,7 +248,7 @@
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
    RAYCAST  &kp Q    &kp X    &kp M    &kp C    &kp V                               &kp K    &kp P    &kp COMMA &kp DOT &kp FSLH &kp RET
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘  
-                                   &kp LGUI  &kp LSHFT &kp DEL                   DELWORD &kp SPACE &kp BSPC 
+                                   &kp LGUI  &kp LSHFT &kp DEL                   DELWORD HYPSPC &kp BSPC 
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
                         >;
                 };
@@ -292,6 +294,21 @@
    XXX      XXX      XXX      XXX      XXX      XXX                                 &kp N0   &kp N1   &kp N2   &kp N3   &kp LS(N2)       &kp LG(RET)
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___      ___       ___                       ___      ___      ___
+                                // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
+                        >;
+                };
+                rsthd_layer {
+                        bindings = <                    
+
+
+//┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
+   &kp TAB  &kp j    &kp c    &kp y    &kp f    &kp k                               &kp z    &kp l    XXX      &kp u    &kp q    &kp MINUS
+//├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
+   HYPESC   &kp r    &kp s    &kp t    &kp h    &kp d                               &kp m    &kp n    &kp a    &kp i    &kp o  &kp SQT
+//├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
+   RAYCAST  &kp semi &kp v    &kp g    &kp p    &kp b                               &kp x    &kp w    &kp COMMA &kp DOT &kp FSLH &kp RET
+//└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘  
+                                   &kp LGUI  &kp e &kp LSHFT                     DELWORD HYPSPC &kp BSPC 
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
                         >;
                 };
