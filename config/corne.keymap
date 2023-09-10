@@ -150,7 +150,7 @@
         };
         combo_cmdR {
             timeout-ms = <35>;
-            key-positions = <5 17>;
+            key-positions = <3 4 5>;
             bindings = <&kp LG(R)>;
         };
         combo_cmdHyphen {
@@ -297,18 +297,18 @@
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
                         >;
                 };
+
                 rsthd_layer {
                         bindings = <                    
 
-
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-   &kp TAB  &kp j    &kp c    &kp y    &kp f    &kp k                               &kp z    &kp l    XXX      &kp u    &kp q    &kp MINUS
+   &kp TAB  &kp J    &kp C    &kp Y    &kp F    &kp K                               &kp Z    &kp L    XXX      &kp U    &kp Q    &kp MINUS
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   HYPESC   &kp r    &kp s    &kp t    &kp h    &kp d                               &kp m    &kp n    &kp a    &kp i    &kp o  &kp SQT
+   HYPESC   &kp R    &kp S    &kp T    &kp H    &kp D                               &kp M    &kp N    &kp A    &kp I    &kp O  &kp SQT
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   RAYCAST  &kp semi &kp v    &kp g    &kp p    &kp b                               &kp x    &kp w    &kp COMMA &kp DOT &kp FSLH &kp RET
+   RAYCAST  &kp semi &kp V    &kp G    &kp P    &kp B                               &kp X    &kp W    &kp COMMA &kp DOT &kp FSLH &kp RET
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘  
-                                   &kp LGUI  &kp e &kp LSHFT                     DELWORD HYPSPC &kp BSPC 
+                                   &kp LGUI  &kp E &kp LSHFT                     DELWORD HYPSPC &kp BSPC 
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
                         >;
                 };
