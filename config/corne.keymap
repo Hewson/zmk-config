@@ -18,7 +18,7 @@
 #undef COMBO_HOOK
 #define COMBO_HOOK global-quick-tap-ms = <150>;
 
-#define HM_TAPPING_TERM 200
+#define HM_TAPPING_TERM 250
 
 #define DEFAULT 0
 #define LOWER   1
