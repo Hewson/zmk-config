@@ -32,7 +32,6 @@
 #define DELWORD &kp LA(BSPC)
 #define HYPSPC &gqt LS(LG(LC(LALT))) SPACE
 
-
 #define XXX &none
 #define ___ &trans
 
@@ -145,7 +144,7 @@
         };
         combo_cmdW {
             timeout-ms = <35>;
-            key-positions = <4 5>;
+            key-positions = <2 3 4>;
             bindings = <&kp LG(W)>;
         };
         combo_cmdR {
@@ -155,7 +154,7 @@
         };
         combo_cmdHyphen {
             timeout-ms = <35>;
-            key-positions = <2 3 4>;
+            key-positions = <4 5>;
             bindings = <&kp LA(LC(LS(LG(MINUS))))>;
         };
         combo_cmdS {
