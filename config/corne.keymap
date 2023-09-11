@@ -69,7 +69,7 @@
 //homerow app        
         combo_find {
             timeout-ms = <35>;
-            key-positions = <6 7>;
+            key-positions = <18 19 20>;
             bindings = <&kp LA(LS(LC(S)))>;
         };
 //back
