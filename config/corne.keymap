@@ -66,22 +66,26 @@
 
     combos {
         compatible = "zmk,combos";
-        
+//homerow app        
         combo_find {
             timeout-ms = <35>;
-            key-positions = <7 8 9>;
+            key-positions = <6 7>;
             bindings = <&kp LA(LS(LC(S)))>;
         };
+//back
         combo_back {
             timeout-ms = <35>;
             key-positions = <13 14 15>;
             bindings = <&kp LG(LBKT)>;
         };
+//find        
         combo_fwds {
             timeout-ms = <35>;
             key-positions = <14 15 16>;
             bindings = <&kp LG(F)>;
+
         };
+//autobracket        
         combo_brackets {
             timeout-ms = <35>;
             key-positions = <19 20 21>;
@@ -94,7 +98,7 @@
         };
         combo_cmdK {
             timeout-ms = <35>;
-            key-positions = <6 7>;
+            key-positions = <7 8 9>;
             bindings = <&kp LG(K)>;
         };
         combo_minimize {
@@ -152,6 +156,7 @@
             key-positions = <3 4 5>;
             bindings = <&kp LG(R)>;
         };
+//hyper hyphen        
         combo_cmdHyphen {
             timeout-ms = <35>;
             key-positions = <4 5>;
