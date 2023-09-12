@@ -23,7 +23,7 @@
 #define LOWER   1
 #define RAISE   2
 #define ADJUST  3
-#define RSTHD   4
+#define CANARY  4
 
 //shortcuts
 #define HYPESC &gqt LS(LG(LC(LALT))) ESC
@@ -311,17 +311,17 @@
                         >;
                 };
 
-                rsthd_layer {
+                canary_layer {
                         bindings = <                    
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-   &kp TAB  &kp J    &kp C    &kp Y    &kp F    &kp K                               &kp Z    &kp L    XXX      &kp U    &kp Q    &kp MINUS
+   &kp TAB  &kp W    &kp L    &kp Y    &kp P    &kp B                               &kp Z    &kp F    &kp O    &kp U    &kp SEMI &kp MINUS
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   HYPESC   &kp R    &kp S    &kp T    &kp H    &kp D                               &kp M    &kp N    &kp A    &kp I    &kp O  &kp SQT
+   HYPESC   &kp C    &kp R    &kp S    &kp T    &kp G                               &kp M    &kp N    &kp E    &kp I    &kp A    &kp SQT
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   RAYCAST  &kp SEMI &kp V    &kp G    &kp P    &kp B                               &kp X    &kp W    &kp COMMA &kp DOT &kp FSLH &kp RET
+   RAYCAST  &kp Q    &kp J    &kp V    &kp D    &kp K                               &kp X    &kp H    &kp COMMA &kp DOT &kp FSLH &kp RET
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘  
-                                   &kp LGUI  &kp E &kp LSHFT                     DELWORD HYPSPC &kp BSPC 
+                                    ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
                         >;
                 };
