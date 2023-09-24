@@ -168,7 +168,7 @@
 //hyper hyphen        
         combo_cmdHyphen {
             timeout-ms = <35>;
-            key-positions = <4 5>;
+            key-positions = <5 17>;
             bindings = <&kp LA(LC(LS(LG(MINUS))))>;
         };
         combo_cmdS {
