@@ -150,7 +150,7 @@
             timeout-ms = <35>;
             key-positions = <25 29>;
             require-prior-idle-ms = <150>;
-            bindings = <&selall_copy>;
+            bindings = <&kp LG(A)>;
         };
         combo_cmdL {
             timeout-ms = <35>;
