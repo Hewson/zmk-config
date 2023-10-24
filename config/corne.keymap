@@ -214,7 +214,7 @@
             require-prior-idle-ms = <75>;         // requires PR #1387
             bindings = <&kp>, <&kp>;
         };
-        gqt_l: require-prior-idle {
+        gqt_l: thumb_right_hold {
             compatible = "zmk,behavior-hold-tap";
             label = "GLOBAL_QUICK_TAP_SPACE";
             #binding-cells = <2>;
