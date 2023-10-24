@@ -214,6 +214,16 @@
             require-prior-idle-ms = <75>;         // requires PR #1387
             bindings = <&kp>, <&kp>;
         };
+        gqt_l: require-prior-idle {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GLOBAL_QUICK_TAP";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <HM_TAPPING_TERM>;
+            quick-tap-ms = <175>;                // repeat on tap-into-hold
+            require-prior-idle-ms = <75>;         // requires PR #1387
+            bindings = <&mo>, <&kp>;
+        };
         hr_l: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LEFT";
@@ -282,7 +292,7 @@
 //├────────┼────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼──────────┼─────────┼────────────┼──────────┼─────────┤
    RAYCAST  &kp Q    &kp J    &kp V      &kp D      &kp K                              &kp X    &kp H      &kp COMMA &kp DOT       &kp FSLH   &kp RET
 //└────────┴────────┴────────┴───┬──-──┴──-─┬─-───┴───┬────┘                          └───┬────┴───┬──────┴───┬─────┴────────────┴──────────┴─────────┘  
-                                    &mo 3    &kp LSHFT  &kp DEL                &mo 2 &kp SPACE &kp BSPC  
+                                    &mo 3    &kp LSHFT  &kp DEL                 &mo 2 &gqt_l 2 SPACE &kp BSPC  
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
 
 
