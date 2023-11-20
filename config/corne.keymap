@@ -287,13 +287,13 @@
 
 
 //┌────────┬────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬──────────┬─────────┬────────────┬──────────┬─────────┐
-//   &kp TAB  &kp W    &kp L    &kp Y      &kp P      &kp B                              &kp Z    &kp F      &kp O     &kp U         &kp SEMI   &kp MINUS
+   &kp TAB  &kp W    &kp L    &kp Y      &kp P      &kp B                              &kp Z    &kp F      &kp O     &kp U         &kp SEMI   &kp MINUS
 //├────────┼────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼──────────┼─────────┼────────────┼──────────┼─────────┤
-//   HYPESC   MEHC     &kp R    &kp S     &hl_l 1 T  &kp G                               &kp M    &kp N      &kp E     &hr_r RGUI I  &kp A      &kp SQT
+   HYPESC   MEHC     &kp R    &kp S     &hl_l 1 T  &kp G                               &kp M    &kp N      &kp E     &hr_r RGUI I  &kp A      &kp SQT
 //├────────┼────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼──────────┼─────────┼────────────┼──────────┼─────────┤
-//   RAYCAST  &kp Q    &kp J    &kp V      &kp D      &kp K                              &kp X    &kp H      &kp COMMA &kp DOT       &kp FSLH   &kp RET
+   RAYCAST  &kp Q    &kp J    &kp V      &kp D      &kp K                              &kp X    &kp H      &kp COMMA &kp DOT       &kp FSLH   &kp RET
 //└────────┴────────┴────────┴───┬──-──┴──-─┬─-───┴───┬────┘                          └───┬────┴───┬──────┴───┬─────┴────────────┴──────────┴─────────┘  
-//                                    &mo 3    &kp LSHFT  &kp DEL                 &mo 2 &gqt_l 2 SPACE &kp BSPC  
+                                    &mo 3    &kp LSHFT  &kp DEL                 &mo 2 &gqt_l 2 SPACE &kp BSPC  
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
 
 
