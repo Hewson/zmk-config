@@ -219,7 +219,7 @@
             label = "GLOBAL_QUICK_TAP_SPACE";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <250>; //updated from HM_TAPPING_TERM
+            tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
             require-prior-idle-ms = <15>;         // requires PR #1387
             bindings = <&mo>, <&kp>;
@@ -287,13 +287,13 @@
 
 
 //┌────────┬────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬──────────┬─────────┬────────────┬──────────┬─────────┐
-   XXX      &kp W    &kp L    &kp Y     &kp P      &kp B                               &kp Z    &kp F      &kp O     &kp U         &kp SEMI   XXX
+   &kp TAB  &kp W    &kp L    &kp Y      &kp P      &kp B                              &kp Z    &kp F      &kp O     &kp U         &kp SEMI   &kp MINUS
 //├────────┼────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼──────────┼─────────┼────────────┼──────────┼─────────┤
-   XXX      &kp C    &kp R    &kp S     &hl_l 1 T  &kp G                               &kp M    &kp N      &kp E     &hr_r RGUI I  &kp A      XXX
+   HYPESC   MEHC     &kp R    &kp S     &hl_l 1 T  &kp G                               &kp M    &kp N      &kp E     &hr_r RGUI I  &kp A      &kp SQT
 //├────────┼────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼──────────┼─────────┼────────────┼──────────┼─────────┤
-   XXX      &kp Q    &kp J    &kp V     &kp D      &kp K                               &kp X    &kp H      &kp COMMA &kp DOT       &kp FSLH   XXX
+   RAYCAST  &kp Q    &kp J    &kp V      &kp D      &kp K                              &kp X    &kp H      &kp COMMA &kp DOT       &kp FSLH   &kp RET
 //└────────┴────────┴────────┴───┬──-──┴──-─┬─-───┴───┬────┘                          └───┬────┴───┬──────┴───┬─────┴────────────┴──────────┴─────────┘  
-                                    XXX      &mo 3    &kp LSHFT           &gqt_l 2 SPACE  &kp BSPC     XXX 
+                                   &kp DEL &mo 3    &kp LSHFT                    &gqt_l 2 SPACE &kp BSPC &mo 2 
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
 
 
@@ -304,28 +304,28 @@
 // layer 1 - left index
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-XXX  &kp TAB     RAYCAST       &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))       &kp LC(LA(PG_UP))  &kp C_PP  &kp UP       XXX           &kp C_BRI_UP  XXX
+   ___   ___   ___   &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))        &kp LC(LA(PG_UP))  &kp C_PP &kp UP   XXX       &kp C_BRI_UP  &kp LG(EQUAL)
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-XXX  &kp LSHFT   &kp LALT      &kp LGUI          XXX           XXX                 &kp LC(LA(PG_DN))  &kp LEFT  &kp DOWN     &kp RIGHT     &kp C_BRI_DN  XXX
+&kp LCTRL &kp LSHFT &kp LALT &kp LGUI  XXX      XXX                       &kp LC(LA(PG_DN))  &kp LEFT &kp DOWN &kp RIGHT &kp C_BRI_DN  &kp LG(MINUS)
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-XXX  &kp LG(Z)   &kp LG(X)     &kp LG(C)         &kp LG(V)     &kp LG(B)           &kp F4             &kp DEL   &kp C_VOL_DN &kp C_VOL_UP  &kp C_NEXT    XXX
+&kp LS(LG(C)) &kp LG(Z) &kp LG(X) &kp LG(C) &kp LG(V) &kp LG(B)                 &kp DEL      XXX      &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT  ___
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    ___      ___       ___                       ___      ___      ___
+                                    ___      ___       ___                       ___            ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
                         >;
                 };
 
                 raise_layer {
-                        bindings = < 
+                        bindings = <
 
 // layer 2 - right thumb
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-XXX         &kp LS(N7) &kp LS(N4) &kp LS(N5) &kp LS(LBKT) &kp LS(RBKT)              XXX      XXX      XXX     &kp LG(EQUAL)   &kp MINUS    XXX
+   XXX     &kp LS(N7) &kp LS(N4) &kp LS(N5) &kp LS(LBKT) &kp LS(RBKT)               XXX      XXX      &kp F4   &to 0    &to 4      &bootloader
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-&kp LS(N3)  &kp LS(N1) &kp LS(N2) &kp LS(N8) &kp LS(N9)   &kp LS(N0)                XXX      XXX      XXX     &kp LG(MINUS)   &kp SQT      XXX
+&kp LS(N3) &kp LS(N1) &kp LS(N2) &kp LS(N8) &kp LS(N9)   &kp LS(N0)                 XXX      XXX      XXX      XXX      XXX      XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-&kp GRAVE   &kp BSLH   &kp LS(N6) XXX        &kp LBKT     &kp RBKT                  XXX      XXX      XXX     XXX             &kp RET      XXX
+&kp GRAVE  &kp BSLH   &kp LS(N6) XXX        &kp LBKT     &kp RBKT                &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 XXX XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
@@ -337,11 +337,11 @@ XXX         &kp LS(N7) &kp LS(N4) &kp LS(N5) &kp LS(LBKT) &kp LS(RBKT)          
 // layer 3 - left thumb
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-XXX  XXX            &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR            &kp MINUS &kp N7   &kp N8   &kp N9   &kp LS(EQUAL)   XXX
+   XXX      XXX      XXX      XXX      XXX      XXX                                &kp MINUS &kp N7   &kp N8   &kp N9   &kp LS(N5)       &kp LS(EQUAL)
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-XXX  XXX            XXX           XXX           XXX           XXX                   &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL       XXX
+   XXX      XXX      XXX      XXX      XXX      XXX                                 &kp DOT  &kp N4   &kp N5   &kp N6   &kp LS(SEMI)     &kp EQUAL
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-XXX  &kp LS(LG(C))  XXX           XXX           XXX           XXX                   &kp N0    &kp N1   &kp N2   &kp N3   &kp LG(RET)     XXX
+   XXX      XXX      XXX      XXX      XXX      XXX                                 &kp N0   &kp N1   &kp N2   &kp N3   &kp LS(N2)       &kp LG(RET)
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
