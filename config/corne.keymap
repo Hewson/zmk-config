@@ -304,7 +304,7 @@
 // layer 1 - left index
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-XXX  &kp TAB     RAYCAST       &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))       &kp LC(LA(PG_UP))  &kp C_PP  &kp UP       XXX           &kp C_BRI_UP  XXX
+XXX  RAYCAST     &kp TAB       &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))       &kp LC(LA(PG_UP))  &kp C_PP  &kp UP       XXX           &kp C_BRI_UP  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
 XXX  &kp LSHFT   &kp LALT      &kp LGUI          XXX           XXX                 &kp LC(LA(PG_DN))  &kp LEFT  &kp DOWN     &kp RIGHT     &kp C_BRI_DN  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
