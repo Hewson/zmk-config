@@ -304,11 +304,11 @@
 // layer 1 - left index
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-XXX  RAYCAST     &kp TAB       &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))       &kp LC(LA(PG_UP))  &kp C_PP  &kp UP       XXX           &kp C_BRI_UP  XXX
+XXX  RAYCAST     &kp TAB       &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))       &kp LC(LA(PG_UP))  ___       &kp UP     XXX           &kp MINUS   XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-XXX  &kp LSHFT   &kp LALT      &kp LGUI          XXX           XXX                 &kp LC(LA(PG_DN))  &kp LEFT  &kp DOWN     &kp RIGHT     &kp C_BRI_DN  XXX
-//├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-XXX  &kp LG(Z)   &kp LG(X)     &kp LG(C)         &kp LG(V)     &kp LG(B)           &kp F4             &kp DEL   &kp C_VOL_DN &kp C_VOL_UP  &kp C_NEXT    XXX
+XXX  &kp LSHFT   &kp LALT      &kp LGUI          XXX           XXX                 &kp LC(LA(PG_DN))  &kp LEFT  &kp DOWN   &kp RIGHT     &kp SQT     XXX
+//├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤ 
+XXX  &kp LG(Z)   &kp LG(X)     &kp LG(C)         &kp LG(V)     &kp LG(B)           &kp F4             &kp DEL   ___        ___           &kp RET     XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
@@ -321,11 +321,11 @@ XXX  &kp LG(Z)   &kp LG(X)     &kp LG(C)         &kp LG(V)     &kp LG(B)        
 // layer 2 - right thumb
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-XXX         &kp LS(N7) &kp LS(N4) &kp LS(N5) &kp LS(LBKT) &kp LS(RBKT)              XXX      XXX      XXX     &kp LG(EQUAL)   &kp MINUS    XXX
+XXX         &kp LS(N7) &kp LS(N4) &kp LS(N5) &kp LS(LBKT) &kp LS(RBKT)              XXX      &kp C_PP  XXX           &kp LG(EQUAL)   &kp C_BRI_UP  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-&kp LS(N3)  &kp LS(N1) &kp LS(N2) &kp LS(N8) &kp LS(N9)   &kp LS(N0)                XXX      XXX      XXX     &kp LG(MINUS)   &kp SQT      XXX
+&kp LS(N3)  &kp LS(N1) &kp LS(N2) &kp LS(N8) &kp LS(N9)   &kp LS(N0)                XXX      XXX       XXX           &kp LG(MINUS)   &kp C_BRI_DN  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-&kp GRAVE   &kp BSLH   &kp LS(N6) XXX        &kp LBKT     &kp RBKT                  XXX      XXX      XXX     XXX             &kp RET      XXX
+&kp GRAVE   &kp BSLH   &kp LS(N6) XXX        &kp LBKT     &kp RBKT                  &kp F4   XXX       &kp C_VOL_DN  &kp C_VOL_UP    &kp C_NEXT    XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
