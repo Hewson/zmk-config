@@ -304,11 +304,11 @@
 // layer 1 - left index
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-XXX  RAYCAST     &kp TAB       &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))       &kp LC(LA(PG_UP))  ___       &kp UP     XXX           &kp MINUS   XXX
+XXX  RAYCAST     XXX         &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))       &kp LC(LA(PG_UP))  XXX       &kp UP     XXX         &kp MINUS   XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-XXX  &kp LSHFT   &kp LALT      &kp LGUI          XXX           XXX                 &kp LC(LA(PG_DN))  &kp LEFT  &kp DOWN   &kp RIGHT     &kp SQT     XXX
+XXX  &kp LSHFT   &kp LALT    &kp LGUI          XXX           XXX                 &kp LC(LA(PG_DN))  &kp LEFT  &kp DOWN   &kp RIGHT   &kp SQT     XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤ 
-XXX  &kp LG(Z)   &kp LG(X)     &kp LG(C)         &kp LG(V)     &kp LG(B)           &kp F4             &kp DEL   ___        ___           &kp RET     XXX
+XXX  &kp LG(Z)   &kp LG(X)   &kp LG(C)         &kp LG(V)     &kp LG(B)           &kp F4             &kp DEL   XXX        XXX         &kp RET     XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
@@ -321,11 +321,11 @@ XXX  &kp LG(Z)   &kp LG(X)     &kp LG(C)         &kp LG(V)     &kp LG(B)        
 // layer 2 - right thumb
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-XXX         &kp LS(N7) &kp LS(N4) &kp LS(N5) &kp LS(LBKT) &kp LS(RBKT)              XXX      &kp C_PP  XXX           &kp LG(EQUAL)   &kp C_BRI_UP  XXX
+   XXX   &kp LS(N7) &kp LS(N4) &kp LS(N5) &kp LS(LBKT) &kp LS(RBKT)              &kp LS(N6)  &kp C_PP  XXX           &kp LG(EQUAL)  &kp C_BRI_UP  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-&kp LS(N3)  &kp LS(N1) &kp LS(N2) &kp LS(N8) &kp LS(N9)   &kp LS(N0)                XXX      XXX       XXX           &kp LG(MINUS)   &kp C_BRI_DN  XXX
+   XXX   &kp LS(N1) &kp LS(N2) &kp LS(N8) &kp LS(N9)   &kp LS(N0)                &kp BSLH    XXX       XXX           &kp LG(MINUS)  &kp C_BRI_DN  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-&kp GRAVE   &kp BSLH   &kp LS(N6) XXX        &kp LBKT     &kp RBKT                  &kp F4   XXX       &kp C_VOL_DN  &kp C_VOL_UP    &kp C_NEXT    XXX
+   XXX   &kp BSLH   &kp LS(N6) XXX        &kp LBKT     &kp RBKT                  &kp F4      XXX       &kp C_VOL_DN  &kp C_VOL_UP   &kp C_NEXT    XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
@@ -334,14 +334,14 @@ XXX         &kp LS(N7) &kp LS(N4) &kp LS(N5) &kp LS(LBKT) &kp LS(RBKT)          
 
                 adjust_layer {
                         bindings = <                    
-// layer 3 - left thumb
+// layer 3 - left thumb and right index
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-XXX  &kp TAB        &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR            &kp MINUS &kp N7   &kp N8   &kp N9   &kp LS(EQUAL)   XXX
+XXX  &kp TAB        &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR            &kp MINUS &kp N7   &kp N8   &kp N9   &kp LS(EQUAL)  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-XXX  HYPESC         XXX           XXX           XXX           XXX                   &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL       XXX
+XXX  HYPESC         XXX           XXX           XXX           XXX                   &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL      XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-XXX  &kp LS(LG(C))  XXX           XXX           XXX           XXX                   &kp N0    &kp N1   &kp N2   &kp N3   &kp LG(RET)     XXX
+XXX  &kp LS(LG(C))  XXX           XXX           XXX           XXX                   &kp N0    &kp N1   &kp N2   &kp N3   XXX            XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
