@@ -75,6 +75,30 @@
 
     combos {
         compatible = "zmk,combos";
+//tab
+        combo_back {
+            timeout-ms = <35>;
+            key-positions = <4 16>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp TAB>;
+        };
+
+//enter
+        combo_back {
+            timeout-ms = <35>;
+            key-positions = <7 19>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp RET>;
+        };
+
+//aprostophe 
+        combo_back {
+            timeout-ms = <35>;
+            key-positions = <10 22>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp SQT>;
+        };
+
 //homerow app        
         combo_find {
             timeout-ms = <35>;
