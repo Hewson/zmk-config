@@ -358,7 +358,7 @@
 // layer 1 - left index
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-XXX  XXX         XXX         &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))       &kp LC(LA(PG_UP))  XXX       &kp UP     XXX         XXX   XXX
+XXX  XXX         XXX         &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))       &kp LC(LA(PG_UP))  &kp TAB       &kp UP     XXX         XXX   XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
 XXX  &kp LSHFT   &kp LALT    &kp LGUI          XXX           XXX                 &kp LC(LA(PG_DN))  &kp LEFT  &kp DOWN   &kp RIGHT   &kp SQT     XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤ 
