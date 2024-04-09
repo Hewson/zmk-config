@@ -213,6 +213,30 @@
             require-prior-idle-ms = <150>;
             bindings = <&kp LA(LC(LS(LG(MINUS))))>;
         };
+
+//raycast        
+        combo_raycast {
+            timeout-ms = <35>;
+            key-positions = <1 13>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp LS(LG(LC(LA(SPACE))))>;
+        };
+//hyper key + escape        
+        combo_escape {
+            timeout-ms = <35>;
+            key-positions = <1 13>;
+            require-prior-idle-ms = <150>;
+            bindings = <&gqt LS(LG(LC(LALT))) ESC>;
+        };
+
+//copy link
+        combo_copylink {
+            timeout-ms = <35>;
+            key-positions = <13 14 15>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp LS(LG(C))>;
+        
+        
         combo_cmdS {
             timeout-ms = <35>;
             key-positions = <17 29>;
@@ -359,11 +383,11 @@ XXX  &kp LG(Z)   &kp LG(X)   &kp LG(C)         &kp LG(V)     &kp LG(B)          
 // layer 3 - left thumb and right index
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-XXX  XXX            &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR            &kp MINUS &kp N7   &kp N8   &kp N9   &kp LS(EQUAL)  XXX
+  XXX     XXX      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR            &kp MINUS &kp N7   &kp N8   &kp N9   &kp LS(EQUAL)  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-XXX  HYPESC         XXX           XXX           XXX           XXX                   &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL      XXX
+  XXX     XXX      XXX           XXX           XXX           XXX                   &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL      XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-XXX  &kp LS(LG(C))  XXX           XXX           XXX           XXX                   &kp N0    &kp N1   &kp N2   &kp N3   XXX            XXX
+  XXX     XXX      XXX           XXX           XXX           XXX                   &kp N0    &kp N1   &kp N2   &kp N3   XXX            XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
