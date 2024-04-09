@@ -94,9 +94,17 @@
 //aprostophe 
         combo_aprostophe {
             timeout-ms = <35>;
-            key-positions = <10 22>;
+            key-positions = <9 21>;
             require-prior-idle-ms = <150>;
             bindings = <&kp SQT>;
+        };
+
+//minus 
+        combo_minus {
+            timeout-ms = <35>;
+            key-positions = <8 20>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp MINUS>;
         };
 
 //homerow app        
@@ -217,14 +225,14 @@
 //raycast        
         combo_raycast {
             timeout-ms = <35>;
-            key-positions = <1 13>;
+            key-positions = <13 25>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LS(LG(LC(LA(SPACE))))>;
         };
 //hyper key + escape        
         combo_escape {
             timeout-ms = <35>;
-            key-positions = <1 13>;
+            key-positions = <2 14>;
             require-prior-idle-ms = <150>;
             bindings = <&gqt LS(LG(LC(LALT))) ESC>;
         };
@@ -350,7 +358,7 @@
 // layer 1 - left index
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-XXX  XXX         XXX         &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))       &kp LC(LA(PG_UP))  XXX       &kp UP     XXX         &kp MINUS   XXX
+XXX  XXX         XXX         &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))       &kp LC(LA(PG_UP))  XXX       &kp UP     XXX         XXX   XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
 XXX  &kp LSHFT   &kp LALT    &kp LGUI          XXX           XXX                 &kp LC(LA(PG_DN))  &kp LEFT  &kp DOWN   &kp RIGHT   &kp SQT     XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤ 
@@ -367,11 +375,11 @@ XXX  &kp LG(Z)   &kp LG(X)   &kp LG(C)         &kp LG(V)     &kp LG(B)          
 // layer 2 - right thumb
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-   XXX   &kp LS(N7) &kp LS(N4) &kp LS(N5) &kp LS(LBKT) &kp LS(RBKT)              &kp LS(N6)  &kp C_PP  XXX           &kp LG(EQUAL)  &kp C_BRI_UP  XXX
+   XXX   &kp LS(N7) &kp LS(N4) &kp LS(N5) &kp LS(LBKT) &kp LS(RBKT)              &kp TILDE   &kp C_PP  XXX           &kp LG(EQUAL)  &kp C_BRI_UP  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
    XXX   &kp LS(N1) &kp LS(N2) &kp LS(N8) &kp LS(N9)   &kp LS(N0)                &kp BSLH    XXX       XXX           &kp LG(MINUS)  &kp C_BRI_DN  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   XXX   &kp BSLH   &kp LS(N6) XXX        &kp LBKT     &kp RBKT                  &kp F4      XXX       &kp C_VOL_DN  &kp C_VOL_UP   &kp C_NEXT    XXX
+   XXX   &kp BSLH   &kp LS(N6) &kp LS(N4) &kp LBKT     &kp RBKT                  &kp F4      XXX       &kp C_VOL_DN  &kp C_VOL_UP   &kp C_NEXT    XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
