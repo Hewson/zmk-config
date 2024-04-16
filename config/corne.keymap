@@ -80,6 +80,15 @@
 
     combos {
         compatible = "zmk,combos";
+
+//autobracket        
+        combo_brackets {
+            timeout-ms = <35>;
+            key-positions = <19 20 21>;
+            require-prior-idle-ms = <150>;
+            bindings = <&auto_brackets>;
+        };
+
 //tab
         combo_tab {
             timeout-ms = <35>;
@@ -87,14 +96,6 @@
             require-prior-idle-ms = <150>;
             bindings = <&kp TAB>;
         };
-
-//enter - right index combo top 2 rows
-//        combo_enter {
-//            timeout-ms = <35>;
-//            key-positions = <7 19>;
-//            require-prior-idle-ms = <150>;
-//            bindings = <&kp RET>;
-//        };
 
 //at sign
         combo_at_sign {
@@ -129,15 +130,6 @@
             bindings = <&kp MINUS>;
         };
 
-//homerow app        
-//        combo_find {
-//            timeout-ms = <35>;
-//            key-positions = <31 32 33>;
-//            require-prior-idle-ms = <150>;
-//            bindings = <&kp LA(LS(LC(S)))>;
-//        };
-
-
 //raycast
         combo_raycast {
             timeout-ms = <35>;
@@ -154,13 +146,9 @@
             bindings = <&kp LG(F)>;
 
         };
-//autobracket        
-        combo_brackets {
-            timeout-ms = <35>;
-            key-positions = <19 20 21>;
-            require-prior-idle-ms = <150>;
-            bindings = <&auto_brackets>;
-        };
+
+
+
         combo_cmdComma {
             timeout-ms = <35>;
             key-positions = <6 18>;
@@ -174,13 +162,6 @@
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(K)>;
         };
-
-//        combo_minimize {
-//            timeout-ms = <35>;
-//           key-positions = <1 2 3>;
-//            require-prior-idle-ms = <150>;
-//            bindings = <&kp LG(M)>;
-//        };
 
         combo_undo {
             timeout-ms = <35>;
