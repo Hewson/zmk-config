@@ -259,12 +259,12 @@
         };
 
 //escape - left index
-//        combo_escape {
-//            timeout-ms = <35>;
-//            key-positions = <4 16>;
-//            require-prior-idle-ms = <150>;
-//            bindings = <&kp ESC>;
-//        };
+        combo_escape {
+            timeout-ms = <35>;
+            key-positions = <4 16>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp ESC>;
+        };
 
 
 //copy link
