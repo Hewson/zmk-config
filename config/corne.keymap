@@ -158,12 +158,12 @@
             bindings = <&kp LG(COMMA)>;
         };
         
-//        combo_cmdK {
-//            timeout-ms = <35>;
-//            key-positions = <13 16>;
-//            require-prior-idle-ms = <150>;
-//            bindings = <&kp LG(K)>;
-//        };
+        combo_cmdK {
+            timeout-ms = <35>;
+            key-positions = <4 16>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp LG(K)>;
+        };
 
         combo_undo {
             timeout-ms = <35>;
