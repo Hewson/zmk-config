@@ -393,7 +393,7 @@ XXX  &kp LG(Z)   &kp LG(X)   &kp LG(C)         &kp LG(V)     &kp LG(B)          
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
    XXX   &kp LS(N7) &kp LS(N4) &kp LS(N5) &kp LS(LBKT) &kp LS(RBKT)              &kp TILDE   &kp C_PP  XXX           &kp LG(EQUAL)  &kp C_BRI_UP  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   XXX   XXX        XXX        &kp LS(N8) &kp LS(N9)   &kp LS(N0)                &kp BSLH    XXX       XXX           &kp LG(MINUS)  &kp C_BRI_DN  XXX
+   XXX   &kp LS(N1) &kp LS(N2) &kp LS(N8) &kp LS(N9)   &kp LS(N0)                &kp BSLH    &kp SQT   &kp MINUS     &kp LG(MINUS)  &kp C_BRI_DN  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
    XXX   &kp BSLH   &kp LS(N3) &kp LS(N4) &kp LBKT     &kp RBKT                  &kp F4      XXX       &kp C_VOL_DN  &kp C_VOL_UP   &kp C_NEXT    XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
@@ -410,7 +410,7 @@ XXX  &kp LG(Z)   &kp LG(X)   &kp LG(C)         &kp LG(V)     &kp LG(B)          
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
   XXX     XXX      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR            &kp MINUS &kp N7   &kp N8   &kp N9   &kp LS(EQUAL)  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-  XXX     XXX      XXX           XXX           XXX           XXX                   &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL      XXX
+  XXX     XXX      &kp BSPC      BACK          FORWARD       XXX                   &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL      XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
   XXX     XXX      XXX           XXX           XXX           XXX                   &kp N0    &kp N1   &kp N2   &kp N3   XXX            XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
@@ -425,11 +425,11 @@ XXX  &kp LG(Z)   &kp LG(X)   &kp LG(C)         &kp LG(V)     &kp LG(B)          
 // layer 4 - other home row - left pinky
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-  XXX     XXX      XXX           BACK           FORWARD      XXX                    XXX      XXX      XXX       XXX      XXX      XXX
+  XXX     XXX      XXX           XXX           XXX           XXX                    XXX      XXX      XXX         XXX      XXX      XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-  XXX     XXX      &kp BSPC      &kp LS(N2)    &kp LS(N1)    XXX                    XXX      &kp TAB  &kp SQT &kp MINUS  CMD_K    XXX
+  XXX     XXX      XXX           XXX           XXX           XXX                    XXX      &kp TAB  &kp LS(TAB) XXX      XXX      XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-  XXX     XXX      XXX           XXX           XXX           XXX                    XXX      XXX      XXX       XXX      XXX      XXX
+  XXX     XXX      XXX           XXX           XXX           XXX                    XXX      XXX      XXX         XXX      XXX      XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
