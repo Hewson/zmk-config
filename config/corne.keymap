@@ -27,7 +27,7 @@
 
 //shortcuts
 #define HYPESC &gqt LS(LG(LC(LALT))) ESC
-#define HYPER_R &gqt LS(LG(LC(LALT))) R
+#define HYPER_C &gqt LS(LG(LC(LALT))) C
 #define RAYCAST &kp LS(LG(LC(LA(SPACE))))
 #define CLOSETAB &kp LG(W)
 #define DELWORD &kp LA(BSPC)
@@ -357,11 +357,11 @@
 //canary
 
 //┌────────┬────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬──────────┬─────────┬────────────┬──────────┬─────────┐
-   XXX      &kp W      &kp L    &kp Y     &kp P      &kp B                               &kp Z    &kp F      &kp O     &kp U       &kp SEMI   XXX
+   XXX      &kp W      &kp L    &kp Y     &kp P      &kp B                             &kp Z    &kp F      &kp O      &kp U       &kp SEMI   XXX
 //├────────┼────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼──────────┼─────────┼────────────┼──────────┼─────────┤
-   XXX      &hl_l 4 C  HYPER_R  &kp S     &hl_l 1 T  &kp G                               &kp M    &kp N      &kp E     &kp I       &kp A      XXX
+   XXX      HYPER_C    &kp R    &kp S     &hl_l 1 T  &kp G                             &kp M    &kp N      &kp E      &kp I       &kp A      XXX
 //├────────┼────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼──────────┼─────────┼────────────┼──────────┼─────────┤
-   XXX      &kp Q      &kp J    &kp V     &kp D      &kp K                               &kp X    &kp H      &kp COMMA &kp DOT     &kp FSLH   XXX
+   XXX      &kp Q      &kp J    &kp V     &kp D      &kp K                             &kp X    &kp H      &kp COMMA  &kp DOT     &kp FSLH   XXX
 //└────────┴────────┴────────┴───┬──-──┴──-─┬─-───┴───┬────┘                          └───┬────┴───┬──────┴───┬─────┴────────────┴──────────┴─────────┘  
                                     XXX      &mo 3    &kp LSHFT                  &gqt_l 2 SPACE  &kp BSPC  XXX      
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
@@ -374,11 +374,11 @@
 // layer 1 - navigation and editing - left index
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-   XXX    CLOSETAB    XXX         PLAINPASTE    REDO      REDO_TAB                  TAB_UP   &kp TAB   &kp UP   XXX         XXX         XXX
+   XXX    CLOSETAB    XXX         PLAINPASTE    REDO      REDO_TAB                  TAB_UP   &kp LS(TAB) &kp UP   XXX         XXX         XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   XXX    &kp LSHFT   &kp LALT    &kp LGUI      XXX       XXX                       TAB_DN   &kp LEFT  &kp DOWN &kp RIGHT   XXX         XXX
+   XXX    &kp LSHFT   &kp LALT    &kp LGUI      XXX       XXX                       TAB_DN   &kp LEFT    &kp DOWN &kp RIGHT   &kp TAB     XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤ 
-   XXX    &kp LG(Z)   &kp LG(X)   &kp LG(C)     &kp LG(V) &kp LG(B)                 &kp F4   &kp DEL   XXX      XXX         &kp RET     XXX
+   XXX    &kp LG(Z)   &kp LG(X)   &kp LG(C)     &kp LG(V) &kp LG(B)                 &kp F4   &kp DEL     XXX      XXX         &kp RET     XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
@@ -410,7 +410,7 @@
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
   XXX     XXX      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR            &kp MINUS &kp N7   &kp N8   &kp N9   &kp LS(EQUAL)  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-  XXX     XXX      &kp BSPC      BACK          FORWARD       XXX                   &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL      XXX
+  XXX     XXX      &kp BSPC      &kp LS(TAB)   &kp TAB       XXX                   &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL      XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
   XXX     XXX      XXX           XXX           XXX           XXX                   &kp N0    &kp N1   &kp N2   &kp N3   XXX            XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
@@ -427,7 +427,7 @@
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
   XXX     XXX      XXX           XXX           XXX           XXX                    XXX      XXX      XXX         XXX      XXX        XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-  XXX     XXX      XXX           XXX           XXX           XXX                    XXX      &kp TAB  &kp LS(TAB) &kp SQT  &kp MINUS  XXX
+  XXX     XXX      XXX           XXX           XXX           XXX                    XXX      XXX      XXX         XXX      XXX        XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
   XXX     XXX      XXX           XXX           XXX           XXX                    XXX      XXX      XXX         XXX      XXX        XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
