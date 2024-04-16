@@ -30,6 +30,12 @@
 #define RAYCAST &kp LS(LG(LC(LA(SPACE))))
 #define CLOSETAB &kp LG(W)
 #define DELWORD &kp LA(BSPC)
+#define PLAINPASTE &kp LS(LA(LG(V))) 
+#define REDO &kp LS(LG(Z)) 
+#define REDO_TAB &kp LS(LG(T)) 
+#define TAB_UP &kp LC(LA(PG_UP))
+#define TAB_DN &kp LC(LA(PG_DN))
+
 
 #define XXX &none
 #define ___ &trans
@@ -382,11 +388,11 @@
 // layer 1 - left index
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-XXX  CLOSETAB    XXX         &kp LS(LA(LG(V))) &kp LS(LG(Z)) &kp LS(LG(T))       &kp LC(LA(PG_UP))  &kp TAB   &kp UP     XXX         XXX         XXX
+XXX  CLOSETAB    XXX         PLAINPASTE        REDO          REDO_TAB            TAB_UP      &kp TAB   &kp UP     XXX         XXX         XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-XXX  &kp LSHFT   &kp LALT    &kp LGUI          XXX           XXX                 &kp LC(LA(PG_DN))  &kp LEFT  &kp DOWN   &kp RIGHT   XXX         XXX
+XXX  &kp LSHFT   &kp LALT    &kp LGUI          XXX           XXX                 TAB_DN      &kp LEFT  &kp DOWN   &kp RIGHT   XXX         XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤ 
-XXX  &kp LG(Z)   &kp LG(X)   &kp LG(C)         &kp LG(V)     &kp LG(B)           &kp F4             &kp DEL   XXX        XXX         &kp RET     XXX
+XXX  &kp LG(Z)   &kp LG(X)   &kp LG(C)         &kp LG(V)     &kp LG(B)           &kp F4      &kp DEL   XXX        XXX         &kp RET     XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
