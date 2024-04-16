@@ -83,7 +83,7 @@
 //tab
         combo_tab {
             timeout-ms = <35>;
-            key-positions = <13 16>;
+            key-positions = <19 22>;
             require-prior-idle-ms = <150>;
             bindings = <&kp TAB>;
         };
@@ -167,12 +167,14 @@
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(COMMA)>;
         };
+        
         combo_cmdK {
             timeout-ms = <35>;
-            key-positions = <19 22>;
+            key-positions = <13 16>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(K)>;
         };
+
 //        combo_minimize {
 //            timeout-ms = <35>;
 //           key-positions = <1 2 3>;
@@ -261,7 +263,7 @@
 //escape - left index
         combo_escape {
             timeout-ms = <35>;
-            key-positions = <4 16>;
+            key-positions = <7 19>;
             require-prior-idle-ms = <150>;
             bindings = <&kp ESC>;
         };
