@@ -35,6 +35,8 @@
 #define REDO_TAB &kp LS(LG(T)) 
 #define TAB_UP &kp LC(LA(PG_UP))
 #define TAB_DN &kp LC(LA(PG_DN))
+#define BACK &kp LG(LBKT)  
+#define FORWARD &kp LG(RBKT)
 
 
 #define XXX &none
@@ -368,7 +370,8 @@
                 };
                 lower_layer {
                         bindings = <
-// layer 1 - left index
+
+// layer 1 - navigation and editing - left index
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
 XXX  CLOSETAB    XXX         PLAINPASTE        REDO          REDO_TAB            TAB_UP      &kp TAB   &kp UP     XXX         XXX         XXX
@@ -385,7 +388,7 @@ XXX  &kp LG(Z)   &kp LG(X)   &kp LG(C)         &kp LG(V)     &kp LG(B)          
                 raise_layer {
                         bindings = < 
 
-// layer 2 - right thumb
+// layer 2 - symbols and media - right thumb
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
    XXX   &kp LS(N7) &kp LS(N4) &kp LS(N5) &kp LS(LBKT) &kp LS(RBKT)              &kp TILDE   &kp C_PP  XXX           &kp LG(EQUAL)  &kp C_BRI_UP  XXX
@@ -401,12 +404,13 @@ XXX  &kp LG(Z)   &kp LG(X)   &kp LG(C)         &kp LG(V)     &kp LG(B)          
 
                 adjust_layer {
                         bindings = <                    
-// layer 3 - left thumb
+
+// layer 3 - numbers and settings and nav - left thumb
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
   XXX     XXX      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR            &kp MINUS &kp N7   &kp N8   &kp N9   &kp LS(EQUAL)  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-  XXX     XXX      XXX           XXX           XXX           XXX                   &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL      XXX
+  XXX     XXX      XXX           BACK          FORWARD       XXX                   &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL      XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
   XXX     XXX      XXX           XXX           XXX           XXX                   &kp N0    &kp N1   &kp N2   &kp N3   XXX            XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
