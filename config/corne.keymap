@@ -23,10 +23,11 @@
 #define LOWER   1
 #define RAISE   2
 #define ADJUST  3
+#define OTHER   4
 
 //shortcuts
 #define HYPESC &gqt LS(LG(LC(LALT))) ESC
-#define HYPER_C &gqt LS(LG(LC(LALT))) C
+#define HYPER_R &gqt LS(LG(LC(LALT))) R
 #define RAYCAST &kp LS(LG(LC(LA(SPACE))))
 #define CLOSETAB &kp LG(W)
 #define DELWORD &kp LA(BSPC)
@@ -37,6 +38,7 @@
 #define TAB_DN &kp LC(LA(PG_DN))
 #define BACK &kp LG(LBKT)  
 #define FORWARD &kp LG(RBKT)
+#define CMD_K &kp LG(K)
 
 
 #define XXX &none
@@ -92,45 +94,44 @@
         };
 
 //tab
-        combo_tab {
-            timeout-ms = <35>;
-            key-positions = <19 22>;
-            require-prior-idle-ms = <150>;
-            bindings = <&kp TAB>;
-        };
+//        combo_tab {
+//            timeout-ms = <35>;
+//            key-positions = <19 22>;
+//            require-prior-idle-ms = <150>;
+//            bindings = <&kp TAB>;
+//        };
 
 //at sign
-        combo_at_sign {
-            timeout-ms = <35>;
-            key-positions = <14 16>;
-            require-prior-idle-ms = <150>;
-            bindings = <&kp LS(N2)>;
-        };
+//        combo_at_sign {
+//            timeout-ms = <35>;
+//            key-positions = <14 16>;
+//            require-prior-idle-ms = <150>;
+//            bindings = <&kp LS(N2)>;
+//        };
 
 //excl mark
-        combo_excl_mark {
-            timeout-ms = <35>;
-            key-positions = <15 16>;
-            require-prior-idle-ms = <150>;
-            bindings = <&kp LS(N1)>;
-        };
-
+//        combo_excl_mark {
+//            timeout-ms = <35>;
+//            key-positions = <15 16>;
+//           require-prior-idle-ms = <150>;
+//            bindings = <&kp LS(N1)>;
+//        };
 
 //aprostophe 
-        combo_aprostophe {
-            timeout-ms = <35>;
-            key-positions = <19 20>;
-            require-prior-idle-ms = <150>;
-            bindings = <&kp SQT>;
-        };
+//        combo_aprostophe {
+//            timeout-ms = <35>;
+//            key-positions = <19 20>;
+//            require-prior-idle-ms = <150>;
+//            bindings = <&kp SQT>;
+//        };
 
 //minus 
-        combo_minus {
-            timeout-ms = <35>;
-            key-positions = <19 21>;
-            require-prior-idle-ms = <150>;
-            bindings = <&kp MINUS>;
-        };
+//        combo_minus {
+//            timeout-ms = <35>;
+//            key-positions = <19 21>;
+//            require-prior-idle-ms = <150>;
+//            bindings = <&kp MINUS>;
+//        };
 
 //raycast
         combo_raycast {
@@ -141,14 +142,13 @@
         };
 
 //find        
-        combo_fwds {
+        combo_find {
             timeout-ms = <35>;
             key-positions = <26 27 28>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(F)>;
 
         };
-
 
 
         combo_cmdComma {
@@ -158,12 +158,12 @@
             bindings = <&kp LG(COMMA)>;
         };
         
-        combo_cmdK {
-            timeout-ms = <35>;
-            key-positions = <13 16>;
-            require-prior-idle-ms = <150>;
-            bindings = <&kp LG(K)>;
-        };
+//        combo_cmdK {
+//            timeout-ms = <35>;
+//            key-positions = <13 16>;
+//            require-prior-idle-ms = <150>;
+//            bindings = <&kp LG(K)>;
+//        };
 
         combo_undo {
             timeout-ms = <35>;
@@ -357,11 +357,11 @@
 //canary
 
 //┌────────┬────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬──────────┬─────────┬────────────┬──────────┬─────────┐
-   XXX      &kp W    &kp L    &kp Y     &kp P      &kp B                               &kp Z    &kp F      &kp O     &kp U         &kp SEMI   XXX
+   XXX      &kp W      &kp L    &kp Y     &kp P      &kp B                               &kp Z    &kp F      &kp O     &kp U       &kp SEMI   XXX
 //├────────┼────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼──────────┼─────────┼────────────┼──────────┼─────────┤
-   XXX      HYPER_C  &kp R    &kp S     &hl_l 1 T  &kp G                               &kp M    &kp N      &kp E     &kp I         &kp A      XXX
+   XXX      &hl_l 4 C  HYPER_R  &kp S     &hl_l 1 T  &kp G                               &kp M    &kp N      &kp E     &kp I       &hl_l 4 A  XXX
 //├────────┼────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼──────────┼─────────┼────────────┼──────────┼─────────┤
-   XXX      &kp Q    &kp J    &kp V     &kp D      &kp K                               &kp X    &kp H      &kp COMMA &kp DOT       &kp FSLH   XXX
+   XXX      &kp Q      &kp J    &kp V     &kp D      &kp K                               &kp X    &kp H      &kp COMMA &kp DOT     &kp FSLH   XXX
 //└────────┴────────┴────────┴───┬──-──┴──-─┬─-───┴───┬────┘                          └───┬────┴───┬──────┴───┬─────┴────────────┴──────────┴─────────┘  
                                     XXX      &mo 3    &kp LSHFT                  &gqt_l 2 SPACE  &kp BSPC  XXX      
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
@@ -410,9 +410,26 @@ XXX  &kp LG(Z)   &kp LG(X)   &kp LG(C)         &kp LG(V)     &kp LG(B)          
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
   XXX     XXX      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR            &kp MINUS &kp N7   &kp N8   &kp N9   &kp LS(EQUAL)  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-  XXX     XXX      XXX           BACK          FORWARD       XXX                   &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL      XXX
+  XXX     XXX      XXX           XXX           XXX           XXX                   &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL      XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
   XXX     XXX      XXX           XXX           XXX           XXX                   &kp N0    &kp N1   &kp N2   &kp N3   XXX            XXX
+//└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
+                                    ___      ___       ___                       ___      ___      ___
+                                // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
+                        >;
+                };
+
+                other_layer {
+                        bindings = <                    
+
+// layer 4 - other home row - left pinky
+
+//┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
+  XXX     XXX      XXX           BACK           FORWARD      XXX                    XXX      XXX      XXX       XXX      XXX      XXX
+//├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
+  XXX     XXX      &kp BSPC      &kp LS(N2)    &kp LS(N1)    XXX                    XXX      &kp TAB  &kp MINUS &kp SQT  CMD_K    XXX
+//├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
+  XXX     XXX      XXX           XXX           XXX           XXX                    XXX      XXX      XXX       XXX      XXX      XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
