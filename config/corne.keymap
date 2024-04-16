@@ -359,7 +359,7 @@
 //┌────────┬────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬──────────┬─────────┬────────────┬──────────┬─────────┐
    XXX      &kp W      &kp L    &kp Y     &kp P      &kp B                               &kp Z    &kp F      &kp O     &kp U       &kp SEMI   XXX
 //├────────┼────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼──────────┼─────────┼────────────┼──────────┼─────────┤
-   XXX      &hl_l 4 C  HYPER_R  &kp S     &hl_l 1 T  &kp G                               &kp M    &kp N      &kp E     &kp I       &hl_r 4 A  XXX
+   XXX      &hl_l 4 C  HYPER_R  &kp S     &hl_l 1 T  &kp G                               &kp M    &kp N      &kp E     &kp I       &kp A      XXX
 //├────────┼────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼──────────┼─────────┼────────────┼──────────┼─────────┤
    XXX      &kp Q      &kp J    &kp V     &kp D      &kp K                               &kp X    &kp H      &kp COMMA &kp DOT     &kp FSLH   XXX
 //└────────┴────────┴────────┴───┬──-──┴──-─┬─-───┴───┬────┘                          └───┬────┴───┬──────┴───┬─────┴────────────┴──────────┴─────────┘  
@@ -374,11 +374,11 @@
 // layer 1 - navigation and editing - left index
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-XXX  CLOSETAB    XXX         PLAINPASTE        REDO          REDO_TAB            TAB_UP      &kp TAB   &kp UP     XXX         XXX         XXX
+   XXX    CLOSETAB    XXX         PLAINPASTE    REDO      REDO_TAB                  TAB_UP   &kp TAB   &kp UP   XXX         XXX         XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-XXX  &kp LSHFT   &kp LALT    &kp LGUI          XXX           XXX                 TAB_DN      &kp LEFT  &kp DOWN   &kp RIGHT   XXX         XXX
+   XXX    &kp LSHFT   &kp LALT    &kp LGUI      XXX       XXX                       TAB_DN   &kp LEFT  &kp DOWN &kp RIGHT   XXX         XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤ 
-XXX  &kp LG(Z)   &kp LG(X)   &kp LG(C)         &kp LG(V)     &kp LG(B)           &kp F4      &kp DEL   XXX        XXX         &kp RET     XXX
+   XXX    &kp LG(Z)   &kp LG(X)   &kp LG(C)     &kp LG(V) &kp LG(B)                 &kp F4   &kp DEL   XXX      XXX         &kp RET     XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
@@ -425,11 +425,11 @@ XXX  &kp LG(Z)   &kp LG(X)   &kp LG(C)         &kp LG(V)     &kp LG(B)          
 // layer 4 - other home row - left pinky
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-  XXX     XXX      XXX           XXX           XXX           XXX                    XXX      XXX      XXX         XXX      XXX      XXX
+  XXX     XXX      XXX           XXX           XXX           XXX                    XXX      XXX      XXX         XXX      XXX        XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-  XXX     XXX      XXX           XXX           XXX           XXX                    XXX      &kp TAB  &kp LS(TAB) XXX      XXX      XXX
+  XXX     XXX      XXX           XXX           XXX           XXX                    XXX      &kp TAB  &kp LS(TAB) &kp SQT  &kp MINUS  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-  XXX     XXX      XXX           XXX           XXX           XXX                    XXX      XXX      XXX         XXX      XXX      XXX
+  XXX     XXX      XXX           XXX           XXX           XXX                    XXX      XXX      XXX         XXX      XXX        XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
