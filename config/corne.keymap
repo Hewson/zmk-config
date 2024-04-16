@@ -374,7 +374,7 @@
 // layer 1 - navigation and editing - left index
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-   XXX    CLOSETAB    XXX         PLAINPASTE    REDO      REDO_TAB                  TAB_UP   &kp LS(TAB) &kp UP   XXX         XXX         XXX
+   XXX    CLOSETAB    CMD_K       PLAINPASTE    REDO      REDO_TAB                  TAB_UP   &kp LS(TAB) &kp UP   XXX         XXX         XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
    XXX    &kp LSHFT   &kp LALT    &kp LGUI      XXX       XXX                       TAB_DN   &kp LEFT    &kp DOWN &kp RIGHT   &kp TAB     XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤ 
@@ -410,7 +410,7 @@
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
   XXX     XXX      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR            &kp MINUS &kp N7   &kp N8   &kp N9   &kp LS(EQUAL)  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-  XXX     XXX      &kp BSPC      &kp LS(TAB)   &kp TAB       XXX                   &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL      XXX
+  XXX     XXX      XXX           XXX           XXX           XXX                   &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL      XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
   XXX     XXX      XXX           XXX           XXX           XXX                   &kp N0    &kp N1   &kp N2   &kp N3   XXX            XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
