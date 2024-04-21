@@ -26,7 +26,7 @@
 #define OTHER   4
 
 //shortcuts
-#define HYPESC &gqt LS(LG(LC(LALT))) ESC
+#define HYPER_A &gqt LS(LG(LC(LALT))) A
 #define HYPER_C &gqt LS(LG(LC(LALT))) C
 #define RAYCAST &kp LS(LG(LC(LA(SPACE))))
 #define CLOSETAB &kp LG(W)
@@ -362,13 +362,13 @@
 //canary
 
 //┌────────┬────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬──────────┬─────────┬────────────┬──────────┬─────────┐
-   XXX      &kp W      &kp L    &kp Y     &kp P      &kp B                             &kp Z    &kp F      &kp O      &kp U       &kp SEMI   XXX
+   XXX      &kp W     &kp L    &kp Y     &kp P      &kp B                               &kp Z    &kp F      &kp O      &kp U       &kp SEMI   XXX
 //├────────┼────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼──────────┼─────────┼────────────┼──────────┼─────────┤
-   XXX      HYPER_C    &kp R    &kp S     &hl_l 1 T  &kp G                             &kp M    &kp N      &kp E      &kp I       &kp A      XXX
+   XXX      HYPER_C   &kp R    &kp S     &hl_l 1 T  &kp G                               &kp M    &kp N      &kp E      &kp I       HYPER_A    XXX
 //├────────┼────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼──────────┼─────────┼────────────┼──────────┼─────────┤
-   XXX      &kp Q      &kp J    &kp V     &kp D      &kp K                             &kp X    &kp H      &kp COMMA  &kp DOT     &kp FSLH   XXX
+   XXX      &kp Q     &kp J    &kp V     &kp D      &kp K                               &kp X    &kp H      &kp COMMA  &kp DOT     &kp FSLH   XXX
 //└────────┴────────┴────────┴───┬──-──┴──-─┬─-───┴───┬────┘                          └───┬────┴───┬──────┴───┬─────┴────────────┴──────────┴─────────┘  
-                                    XXX      &mo 3    &sk LSHIFT                 &gqt_l 2 SPACE  &kp BSPC  XXX      
+                                    XXX      &tog 3    &sk LSHIFT                 &gqt_l 2 SPACE  &kp BSPC  XXX      
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
 
                         >;
@@ -398,7 +398,7 @@
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
    XXX   &kp LS(N7) &kp LS(N4) &kp LS(N5) &kp LS(LBKT) &kp LS(RBKT)              &kp TILDE   &kp C_PP  XXX           &kp LG(EQUAL)  &kp C_BRI_UP  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   XXX   &kp LS(N1) &kp LS(N2) &kp LS(N8) &kp LS(N9)   &kp LS(N0)                &kp BSLH    &kp SQT   &kp MINUS     &kp LG(MINUS)  &kp C_BRI_DN  XXX
+   XXX   &kp LS(N1) &kp LS(N2) &kp LS(N8) &kp LS(N9)   &kp LS(N0)                &kp BSLH    &kp MINUS XXX           &kp LG(MINUS)  &kp C_BRI_DN  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
    XXX   &kp BSLH   &kp LS(N3) &kp LS(N4) &kp LBKT     &kp RBKT                  &kp F4      XXX       &kp C_VOL_DN  &kp C_VOL_UP   &kp C_NEXT    XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
