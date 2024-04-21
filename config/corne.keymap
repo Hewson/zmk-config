@@ -368,7 +368,7 @@
 //├────────┼────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼──────────┼─────────┼────────────┼──────────┼─────────┤
    XXX      &kp Q     &kp J    &kp V     &kp D      &kp K                               &kp X    &kp H      &kp COMMA  &kp DOT     &kp FSLH   XXX
 //└────────┴────────┴────────┴───┬──-──┴──-─┬─-───┴───┬────┘                          └───┬────┴───┬──────┴───┬─────┴────────────┴──────────┴─────────┘  
-                                    XXX      &tog 3    &sk LSHIFT                 &gqt_l 2 SPACE  &kp BSPC  XXX      
+                                     XXX      &tog 3    &sk LSHIFT               &gqt_l 2 SPACE  &kp BSPC  XXX      
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
 
                         >;
@@ -379,13 +379,13 @@
 // layer 1 - navigation and editing - left index
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-   XXX    CLOSETAB    CMD_K       PLAINPASTE    REDO      REDO_TAB                  TAB_UP   &kp LS(TAB) &kp UP   XXX         XXX         XXX
+   XXX    CLOSETAB    CMD_K       PLAINPASTE    REDO      REDO_TAB                  TAB_UP   XXX       &kp UP    XXX       XXX      XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   XXX    &kp LSHFT   &kp LALT    &kp LGUI      XXX       XXX                       TAB_DN   &kp LEFT    &kp DOWN &kp RIGHT   &kp TAB     XXX
+   XXX    &kp LSHFT   &kp LALT    &kp LGUI      XXX       XXX                       TAB_DN   &kp LEFT  &kp DOWN  &kp RIGHT &kp TAB  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤ 
-   XXX    &kp LG(Z)   &kp LG(X)   &kp LG(C)     &kp LG(V) &kp LG(B)                 &kp F4   DELWORD     XXX      XXX         &kp RET     XXX
+   XXX    &kp LG(Z)   &kp LG(X)   &kp LG(C)     &kp LG(V) &kp LG(B)                 &kp F4   DELWORD   XXX       XXX       &kp RET  XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    ___      ___       ___                       ___      ___      ___
+                                     ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
                         >;
                 };
@@ -398,11 +398,11 @@
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
    XXX   &kp LS(N7) &kp LS(N4) &kp LS(N5) &kp LS(LBKT) &kp LS(RBKT)              &kp TILDE   &kp C_PP  XXX           &kp LG(EQUAL)  &kp C_BRI_UP  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   XXX   &kp LS(N1) &kp LS(N2) &kp LS(N8) &kp LS(N9)   &kp LS(N0)                &kp BSLH    &kp MINUS XXX           &kp LG(MINUS)  &kp C_BRI_DN  XXX
+   XXX   &kp LS(N1) &kp LS(N2) &kp LS(N8) &kp LS(N9)   &kp LS(N0)                &kp BSLH    XXX       XXX           &kp LG(MINUS)  &kp C_BRI_DN  XXX
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   XXX   &kp BSLH   &kp LS(N3) &kp LS(N4) &kp LBKT     &kp RBKT                  &kp F4      XXX       &kp C_VOL_DN  &kp C_VOL_UP   &kp C_NEXT    XXX
+   XXX   &kp MINUS  &kp LS(N3) &kp LS(N4) &kp LBKT     &kp RBKT                  &kp F4      XXX       &kp C_VOL_DN  &kp C_VOL_UP   &kp C_NEXT    XXX
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    ___      ___       ___                       ___      ___      ___
+                                     ___      ___       ___                       ___      ___      ___
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
                         >;
                 };
