@@ -254,6 +254,18 @@
     };
 
     behaviors {
+        td_st: tap_dance_shift {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&sk LSHIFT>, <RAYCAST>;
+        };
+        td_esc: tap_dance_esc {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp COMMA>, <&kp ESC>;
+        };
         gqt: require-prior-idle {
             compatible = "zmk,behavior-hold-tap";
             label = "GLOBAL_QUICK_TAP";
