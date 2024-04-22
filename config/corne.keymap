@@ -286,7 +286,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp FSLH>, <&kp LS(FSLH)>;
+            bindings = <&kp FSLH>, <&kp QMARK>;
         };
         gqt: require-prior-idle {
             compatible = "zmk,behavior-hold-tap";
