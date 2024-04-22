@@ -370,13 +370,13 @@
 //canary
 
 //┌────────┬────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬──────────┬─────────┬────────────┬──────────┬─────────┐
-   XXX      &kp W     &kp L    &kp Y     &kp P      &kp B                               &kp Z    &kp F      &kp O      &kp U       &kp SEMI   XXX
+   XXX      &kp W     &kp L    &kp Y     &kp P      &kp B                               &kp Z    &kp F      &kp O      &kp U       &kp SEMI      XXX
 //├────────┼────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼──────────┼─────────┼────────────┼──────────┼─────────┤
-   XXX      HYPER_C   &kp R    &kp S     &hl_l 1 T  &kp G                               &kp M    &kp N      &kp E      &kp I       HYPER_A    XXX
+   XXX      HYPER_C   &kp R    &kp S     &hl_l 1 T  &kp G                               &kp M    &kp N      &kp E      &kp I       HYPER_A       XXX
 //├────────┼────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼──────────┼─────────┼────────────┼──────────┼─────────┤
-   XXX      &kp Q     &kp J    &kp V     &kp D      &kp K                               &kp X    &kp H      &td_esc    &kp DOT     &kp FSLH   XXX
+   XXX      &kp Q     &kp J    &kp V     &kp D      &kp K                               &kp X    &kp H      &td_esc    &kp DOT    &td_question   XXX
 //└────────┴────────┴────────┴───┬──-──┴──-─┬─-───┴───┬────┘                          └───┬────┴───┬──────┴───┬─────┴────────────┴──────────┴─────────┘  
-                                     XXX     &mo 3    &td_st                &gqt_l 2 SPACE  &kp BSPC  XXX      
+                                     XXX     &mo 3     &td_st                &gqt_l 2 SPACE  &kp BSPC  XXX      
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
 
                         >;
