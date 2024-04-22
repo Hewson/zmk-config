@@ -106,7 +106,7 @@
         };
 
 //hypen
-        combo_aprostophe {
+        combo_hyphen {
             timeout-ms = <35>;
             key-positions = <19 20 21 22>;
             require-prior-idle-ms = <10>;
@@ -281,6 +281,12 @@
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp COMMA>, <&kp ESC>;
+        };
+        td_question: tap_dance_question {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp FSLH>, <&kp LS(FSLH)>;
         };
         gqt: require-prior-idle {
             compatible = "zmk,behavior-hold-tap";
