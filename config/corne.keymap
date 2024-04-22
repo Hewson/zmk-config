@@ -266,7 +266,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&sk LSHIFT>, <&kp K>;
+            bindings = <&sk LSHIFT>, <CMD_K>;
         };
         td_esc: tap_dance_esc {
             compatible = "zmk,behavior-tap-dance";
