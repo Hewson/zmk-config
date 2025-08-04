@@ -408,7 +408,7 @@
 // screenshot
         combo_screenshot {
             timeout-ms = <COMBO_V_SLOW>;
-            key-positions = <L_TH 14 3>;f
+            key-positions = <L_TH 14 3>;
             require-prior-idle-ms = <COMBO_FAST>;
             bindings = <&kp SSHOT>;
         };
@@ -632,7 +632,7 @@
 // tab
         combo_tab {             
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <13 25>;
+            key-positions = <14 26>;
             require-prior-idle-ms = <COMBO_FAST>;
             bindings = <&kp TAB>;
         };
