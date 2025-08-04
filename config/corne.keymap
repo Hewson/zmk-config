@@ -540,7 +540,7 @@
             require-prior-idle-ms = <COMBO_FAST>;
             bindings = <&kp SQT>;
         };
-------------
+//------------
 // cmd k
         combo_cmd_k {
             timeout-ms = <COMBO_NORMAL>;
