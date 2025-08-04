@@ -161,7 +161,7 @@
 #define ___ &trans
 #define AS_FSLH &ht FSLH LS(FSLH)
 #define V_UP &kp C_VOL_UP
-#define V_DN &kp C_VOL_DN fs
+#define V_DN &kp C_VOL_DN
 #define B_UP &kp C_BRI_UP
 #define B_DN &kp C_BRI_DN
 
