@@ -161,7 +161,7 @@
 #define ___ &trans
 #define AS_FSLH &ht FSLH LS(FSLH)
 #define V_UP &kp C_VOL_UP
-#define V_DN &kp C_VOL_DN
+#define V_DN &kp C_VOL_DN fs
 #define B_UP &kp C_BRI_UP
 #define B_DN &kp C_BRI_DN
 
@@ -408,7 +408,7 @@
 // screenshot
         combo_screenshot {
             timeout-ms = <COMBO_V_SLOW>;
-            key-positions = <L_TH 13 2>;
+            key-positions = <L_TH 14 3>;
             require-prior-idle-ms = <COMBO_FAST>;
             bindings = <&kp SSHOT>;
         };
@@ -513,14 +513,14 @@
         combo_at_sign {
             timeout-ms = <COMBO_V_SLOW>;
             key-positions = <R_TH 19 21>;
-            require-prior-idle-ms = <COMBO_FAST>;
+            require-prior-idle-ms = <COMBO_FAST>; 
             bindings = <&kp LS(N2)>;
         };
 
 // # hash sign
         combo_hash_sign {
             timeout-ms = <20>;
-            key-positions = <13 14>;
+            key-positions = <14 15>;
             require-prior-idle-ms = <50>;
             bindings = <&kp LS(N3)>;
         };
@@ -648,7 +648,7 @@
 // undo cmd z
         combo_undo {
             timeout-ms = <COMBO_V_SLOW>;
-            key-positions = <L_TH 13 14>;
+            key-positions = <L_TH 14 15>;
             require-prior-idle-ms = <COMBO_FAST>;
             bindings = <&kp LG(Z)>;
         };
@@ -696,7 +696,7 @@
 // copy - cmd C - left
         combo_cmd_C {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <25 26>;
+            key-positions = <26 27>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(C)>;
         };
@@ -704,7 +704,7 @@
 // paste - cmd V - left
         combo_cmd_V {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <26 27>;
+            key-positions = <27 28>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(V)>;
         };
@@ -712,7 +712,7 @@
 // select all - cmd A - left
         combo_cmd_A {
             timeout-ms = <COMBO_SLOW>;
-            key-positions = <25 26 27>;
+            key-positions = <26 27 28>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(A)>;
         };
@@ -720,7 +720,7 @@
 // cut - cmd X - left
         combo_cmd_X {
             timeout-ms = <COMBO_SLOW>;
-            key-positions = <25 27>;
+            key-positions = <26 28>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(X)>;
         };
