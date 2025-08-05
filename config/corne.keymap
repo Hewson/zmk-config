@@ -663,7 +663,7 @@
 
 // enter - return left
         combo_ret_l {
-            timeout-ms = <COMBO_NORMAL>;
+            timeout-ms = <COMBO_V_SLOW>;
             key-positions = <26 15 16>;
             require-prior-idle-ms = <COMBO_FAST>;
             bindings = <&kp RET>;
