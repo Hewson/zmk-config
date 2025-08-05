@@ -544,7 +544,7 @@
 // cmd k
         combo_cmd_k {
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <7 19>;
+            key-positions = <8 9>;
             require-prior-idle-ms = <COMBO_FAST>;
             bindings = <&kp LG(K)>;
         };
@@ -622,12 +622,12 @@
         };
 
 // delword right hand
-        combo_del_word {
-            timeout-ms = <COMBO_NORMAL>;
-            key-positions = <18 19>;
-            require-prior-idle-ms = <COMBO_FAST>;
-            bindings = <DELWORD>;
-        };
+//        combo_del_word {
+//            timeout-ms = <COMBO_NORMAL>;
+//            key-positions = <18 19>;
+//            require-prior-idle-ms = <COMBO_FAST>;
+//            bindings = <DELWORD>;
+//        };
 
 // tab
         combo_tab {             
@@ -640,7 +640,7 @@
 // delete left hand
         combo_del_l { 
             timeout-ms = <COMBO_FAST>;
-            key-positions = <16 17>;
+            key-positions = <4 5>;
             require-prior-idle-ms = <60>;
             bindings = <&kp BSPC>;
         };
@@ -656,7 +656,7 @@
 // find
         combo_find {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <4 5>;
+            key-positions = <2 4>;
             require-prior-idle-ms = <80>;
             bindings = <&kp LG(F)>;
         };
@@ -664,7 +664,7 @@
 // enter - return left
         combo_ret_l {
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <4 16>;
+            key-positions = <25 14 15>;
             require-prior-idle-ms = <COMBO_FAST>;
             bindings = <&kp RET>;
         };
@@ -680,7 +680,7 @@
 // esc left
         combo_esc_l {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <3 15>;
+            key-positions = <2 38>;
             require-prior-idle-ms = <50>;
             bindings = <&kp ESC>;
         };
@@ -688,7 +688,7 @@
 // esc right
         combo_esc_r {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <8 20>;
+            key-positions = <39 8>;
             require-prior-idle-ms = <50>;
             bindings = <&kp ESC>;
         };
@@ -1151,9 +1151,9 @@
 /* 
 aptmak
   ┌────────────┬──────────────┬─────────────┬──────────────┬────────────┐                    ┌─────────────┬──────────────┬─────────────┬───────────┬─────────────┐
-                               save                         bitwarden                         string2       string1        priority note 
+                               gemini        save           bitwarden                         string2       string1        priority note 
   ├────────────┼──────────────┼─────────────┼──────────────┼────────────┤                    ├─────────────┼──────────────┼─────────────┼───────────┼─────────────┤
-   numbers      symbols        ai models     layer 1        bluetooth                         arrow         layer 7        voice search  brackets    bullet     
+   numbers      symbols        manage layer  layer 1        bluetooth                         arrow         layer 7        voice search  brackets    bullet     
   ├────────────┼──────────────┼─────────────┼──────────────┼────────────┤                    ├─────────────┼──────────────┼─────────────┼───────────┼─────────────┤
                 hyper                        meh                                                            em dash        raycast notes ---          
   └────────────┴──────────────┴───┬─────────┴─────┬────────┴───┬────────┘                    └───────┬─────┴───┬──────────┴─────────────┴───────────┴─────────────┘   
@@ -1161,11 +1161,11 @@ aptmak
                                                   └────────────┴─────────────┘         └─────────┴─────────────┘ */
 
 //┌────────────┬──────────────┬─────────────┬──────────────┬────────────┐                    ┌─────────────┬──────────────┬─────────────┬───────────┬─────────────┐
-XXX   XXX          &kp W          &ht LG(S) F   &kp P          &ht BBIT B                        &strr 0 J     &str 0 L       &ht HYP_V U         &kp Y       XXX         XXX
+XXX   XXX          &kp W          &hl_l 7 F   &ht LG(S)  P   &ht BBIT B                        &strr 0 J     &str 0 L       &ht HYP_V U         &kp Y       XXX         XXX
 //├────────────┼──────────────┼─────────────┼──────────────┼────────────┤                    ├─────────────┼──────────────┼─────────────┼───────────┼─────────────┤
-XXX   &hl_l 3 R    &hl_l 6 S      &hl_l 5 T     &hl_l 1 H      &hl_l 4 K                         &ra 0 X       &ht HYP_K N    &ht HYP_T A         &ab 0 I     &ht BULT O  XXX  
+XXX   &hl_l 3 R    &hl_l 6 S      &hl_l 5 T   &hl_l 1 H      &hl_l 4 K                         &ra 0 X       &ht HYP_K N    &ht HYP_T A         &ab 0 I     &ht BULT O  XXX  
 //├────────────┼──────────────┼─────────────┼──────────────┼────────────┤                    ├─────────────┼──────────────┼─────────────┼───────────┼─────────────┤
-XXX   &hl_l 3 R    &as HYPER C    &kp G         &as MEH D      XXX                               XXX           &emd 0 M       &ht HYP_BSLH COMMA  &thh 0 DOT  &ht BULT O  XXX  
+XXX   &hl_l 3 R    &as HYPER C    &kp G       &as MEH D      XXX                               XXX           &emd 0 M       &ht HYP_BSLH COMMA  &thh 0 DOT  XXX         XXX  
 //└────────────┴──────────────┴─────────────┴─────┬────────┴───┬────────┘                    └───┬─────────┴───┬──────────┴─────────────┴───────────┴─────────────┘   
                                                XXX    XXX         &kp SPACE                &th_l 2 E  XXX XXX        
                                                // └────────────┴─────────────┘         └─────────┴─────────────┘ 
@@ -1182,7 +1182,7 @@ XXX   XXX          &kp BSPC     PLAINPASTE  XXX         XXX                     
 //├────────────┼────────────┼──────────┼───────────┼─────────┤                    ├───────────────┼─────────────┼─────────────┼───────────┼──────────┤
 XXX   &kp LSHFT    &kp LALT     &kp LGUI    XXX         REDO_TAB                      &kp LG(U)       &kp LEFT      &kp DOWN      &kp RIGHT      &kp TAB  XXX
 //├────────────┼────────────┼──────────┼───────────┼─────────┤                    ├───────────────┼─────────────┼─────────────┼───────────┼──────────┤
-XXX   &kp LSHFT    &kp LG(X)    &kp LG(C)   &kp LG(V)   XXX                           XXX             &kp LS(TAB)   &kp DEL       &kp LS(RET)    &kp TAB  XXX     
+XXX   &kp LSHFT    &kp LG(X)    &kp LG(C)   &kp LG(V)   XXX                           XXX             &kp LS(TAB)   &kp DEL       &kp LS(RET)    XXX      XXX     
 //└────────────┴────────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬───────────┴───┬─────────┴─────────────┴───────────┴──────────┘
                           XXX     ___          ___                            &kp LG(B)    ___     XXX            
                              // └────────────┴─────────┘                    └─────────┴───────────────┘
@@ -1216,7 +1216,7 @@ XXX   XXX       XXX       XXX        XXX         XXX                            
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼─────────────┤
 XXX   XXX       &mo 6     XXX        &kp BSPC    XXX                            &kp DOT   CMD_4      CMD_5         CMD_6       &kp EQUAL  XXX     
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼─────────────┤
-XXX   XXX       XXX       XXX        XXX         XXX                            XXX       CMD_1      CMD_2         CMD_3       &kp EQUAL  XXX      
+XXX   XXX       XXX       XXX        XXX         XXX                            XXX       CMD_1      CMD_2         CMD_3       XXX        XXX      
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴─────────────┘
                    XXX      ___          ___                           CMD_0   ___       XXX                                     
                        // └────────────┴─────────┘                    └─────────┴─────────┘
@@ -1243,16 +1243,14 @@ XXX   XXX       XXX       XXX        XXX         XXX                            
                 mous_layer {
                         bindings = <                    
 
-// layer 5 - gemini transitions
-
-//                                                                                     clean      streamline    profesh    exec - what is this?        
+// layer 5 - manage items
 
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
 XXX   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        XXX           XXX         XXX        XXX
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-XXX   XXX       XXX       XXX        XXX         XXX                            XXX       &kp HYP_R  &kp HYP_G     &kp HYP_S   &kp HYP_SE XXX
+XXX   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        XXX           XXX         XXX        XXX
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-XXX   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        XXX           XXX         &kp HYP_SE XXX
+XXX   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        XXX           XXX         XXX        XXX
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
                    XXX      ___          ___                           &kp LG(A)  ___     XXX      
                        // └────────────┴─────────┘                    └─────────┴─────────┘
@@ -1270,7 +1268,7 @@ XXX   XXX       XXX       XXX        XXX         XXX                            
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
 XXX   XXX       XXX       XXX        &kp BSPC    XXX                            &kp BSLH  &kp LS(N9)    &kp LS(N7) &kp LS(N0)    &kp LS(N5) XXX
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-XXX   XXX       XXX       XXX        XXX         XXX                            XXX       &kp LS(COMMA) &kp EQUAL  &kp LS(DOT)   &kp LS(N5) XXX
+XXX   XXX       XXX       XXX        XXX         XXX                            XXX       &kp LS(COMMA) &kp EQUAL  &kp LS(DOT)   XXX        XXX
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
                       XXX   ___          ___                           &kp FSLH       ___   XXX   
                        // └────────────┴─────────┘                    └─────────┴─────────┘
@@ -1281,18 +1279,20 @@ XXX   XXX       XXX       XXX        XXX         XXX                            
                 app_layer {
                         bindings = <                    
 
-// layer 7 - right index
+// layer 7 - gemini transitions
+
+//                                                                                     clean      streamline    profesh    exec - what is this?        
 
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-XXX   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        XXX           XXX         XXX XXX
+XXX   XXX       XXX       XXX        XXX         XXX                            XXX       &kp HYP_R  &kp HYP_G     &kp HYP_S   &kp HYP_SE XXX
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-XXX   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        XXX           XXX         XXX XXX
+XXX   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        XXX           XXX         XXX        XXX
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-XXX   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        XXX           XXX         XXX XXX
+XXX   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        XXX           XXX         XXX        XXX
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
-                XXX        ___          ___                            ___        ___     XXX 
+                   XXX      ___          ___                           &kp LG(A)  ___     XXX      
                        // └────────────┴─────────┘                    └─────────┴─────────┘
-                       
+
                         >;
                 };
 
