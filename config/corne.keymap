@@ -639,9 +639,9 @@
 
 // delete left hand
         combo_del_l { 
-            timeout-ms = <COMBO_FAST>;
-            key-positions = <4 5>;
-            require-prior-idle-ms = <60>;
+            timeout-ms = <COMBO_V_SLOW>;
+            key-positions = <2 3 16>;
+            require-prior-idle-ms = <COMBO_FAST>;
             bindings = <&kp BSPC>;
         };
 
@@ -656,7 +656,7 @@
 // find
         combo_find {
             timeout-ms = <COMBO_V_SLOW>;
-            key-positions = <L_TH 14 16>;
+            key-positions = <4 5>;
             require-prior-idle-ms = <COMBO_FAST>;
             bindings = <&kp LG(F)>;
         };
