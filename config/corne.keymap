@@ -678,20 +678,20 @@
         };
 
 // esc left
-//        combo_esc_l {
-//            timeout-ms = <COMBO_FAST>;
-//            key-positions = <3 15>;
-//            require-prior-idle-ms = <50>;
-//            bindings = <&kp ESC>;
-//        };
+        combo_esc_l {
+            timeout-ms = <COMBO_V_SLOW>;
+            key-positions = <2 3 16>;
+            require-prior-idle-ms = <COMBO_FAST>;
+            bindings = <&kp ESC>;
+        };
 
 // esc right
-//        combo_esc_r {
-//           timeout-ms = <COMBO_FAST>;
-//            key-positions = <8 20>;
-//            require-prior-idle-ms = <50>;
-//            bindings = <&kp ESC>;
-//        };
+        combo_esc_r {
+            timeout-ms = <COMBO_V_SLOW>;
+            key-positions = <19 8 9>;
+            require-prior-idle-ms = <COMBO_FAST>;
+            bindings = <&kp ESC>;
+        };
 
 // copy - cmd C - left
         combo_cmd_C {
