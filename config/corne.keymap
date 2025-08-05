@@ -1195,11 +1195,11 @@ XXX   &kp LSHFT    &kp LG(X)    &kp LG(C)   &kp LG(V)   XXX                     
 // layer 2 - media - right thumb
 
 //┌─────────┬─────────┬──────────┬──────────────┬────────────┐                    ┌─────────┬──────────┬─────────────┬──────────────┬──────────┐
-XXX   XXX   &kp LS(LBKT)  &kp LS(RBKT) XXX          XXX                               XXX       &kp F4     &ht C_NEXT C_PP  XXX         XXX XXX
+XXX   XXX   &kp LS(LBKT)  &kp LS(RBKT) XXX          XXX                               XXX       &kp F4     &ht C_NEXT C_PP  V_UP       XXX XXX
 //├─────────┼─────────┼──────────┼──────────────┼────────────┤                    ├─────────┼──────────┼─────────────┼──────────────┼──────────┤
-XXX   XXX   &kp LBKT      &kp RBKT     &kp LG(E)    XXX                               XXX       &kp BSPC   V_DN             V_UP        XXX XXX    
+XXX   XXX   &kp LBKT      &kp RBKT     &kp LG(E)    XXX                               XXX       &kp BSPC   DELWORD          V_DN       XXX XXX    
 //├─────────┼─────────┼──────────┼──────────────┼────────────┤                    ├─────────┼──────────┼─────────────┼──────────────┼──────────┤
-XXX   XXX   XXX           XXX          XXX          XXX                               XXX       XXX        B_DN             B_UP        XXX XXX
+XXX   XXX   XXX           XXX          XXX          XXX                               XXX       XXX        B_DN             B_UP       XXX XXX
 //└─────────┴─────────┴───┬──────┴─────┬────────┴───┬────────┘                    └───┬─────┴───┬──────┴─────────────┴──────────────┴──────────┘
                      XXX    ___         ___                           ___        ___      XXX
                        // └────────────┴─────────┘                    └─────────┴─────────┘
