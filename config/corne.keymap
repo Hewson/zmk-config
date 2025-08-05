@@ -622,12 +622,12 @@
         };
 
 // delword right hand
-//        combo_del_word {
-//            timeout-ms = <COMBO_NORMAL>;
-//            key-positions = <18 19>;
-//            require-prior-idle-ms = <COMBO_FAST>;
-//            bindings = <DELWORD>;
-//        };
+        combo_del_word {
+            timeout-ms = <COMBO_V_SLOW>;
+            key-positions = <19 8 9>;
+            require-prior-idle-ms = <COMBO_FAST>;
+            bindings = <DELWORD>;
+        };
 
 // tab
         combo_tab {             
@@ -679,17 +679,17 @@
 
 // esc left
         combo_esc_l {
-            timeout-ms = <COMBO_V_SLOW>;
-            key-positions = <2 3 16>;
-            require-prior-idle-ms = <COMBO_FAST>;
+            timeout-ms = <COMBO_FAST>;
+            key-positions = <3 15>;
+            require-prior-idle-ms = <50>;
             bindings = <&kp ESC>;
         };
 
 // esc right
         combo_esc_r {
-            timeout-ms = <COMBO_V_SLOW>;
-            key-positions = <19 8 9>;
-            require-prior-idle-ms = <COMBO_FAST>;
+            timeout-ms = <COMBO_FAST>;
+            key-positions = <8 20>;
+            require-prior-idle-ms = <50>;
             bindings = <&kp ESC>;
         };
 
@@ -1195,11 +1195,11 @@ XXX   XXX          &kp LG(X)    &kp LG(C)   &kp LG(V)   XXX                     
 // layer 2 - media - right thumb
 
 //┌─────────┬─────────┬──────────┬──────────────┬────────────┐                    ┌─────────┬──────────┬─────────────┬──────────────┬──────────┐
-XXX   XXX   &kp LS(LBKT)  &kp LS(RBKT) XXX          XXX                               V_UP     &kp F4     &ht C_NEXT C_PP  XXX        XXX XXX
+XXX   XXX   &kp LS(LBKT)  &kp LS(RBKT) XXX          XXX                               XXX    &kp F4     &ht C_NEXT C_PP  XXX         XXX   XXX
 //├─────────┼─────────┼──────────┼──────────────┼────────────┤                    ├─────────┼──────────┼─────────────┼──────────────┼──────────┤
-XXX   XXX   &kp LBKT      &kp RBKT     &kp LG(E)    XXX                               V_DN     &kp BSPC   DELWORD        &kp ESC    XXX XXX    
+XXX   XXX   &kp LBKT      &kp RBKT     &kp LG(E)    XXX                               XXX    &kp BSPC   V_DN             V_UP        XXX   XXX    
 //├─────────┼─────────┼──────────┼──────────────┼────────────┤                    ├─────────┼──────────┼─────────────┼──────────────┼──────────┤
-XXX   XXX   XXX           XXX          XXX          XXX                               XXX      XXX        B_DN             B_UP       XXX XXX
+XXX   XXX   XXX           XXX          XXX          XXX                               XXX    XXX        B_DN             B_UP        XXX   XXX
 //└─────────┴─────────┴───┬──────┴─────┬────────┴───┬────────┘                    └───┬─────┴───┬──────┴─────────────┴──────────────┴──────────┘
                      XXX    ___         ___                           ___        ___      XXX
                        // └────────────┴─────────┘                    └─────────┴─────────┘
