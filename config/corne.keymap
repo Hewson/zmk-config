@@ -1165,7 +1165,7 @@ XXX   XXX          &kp W          &ht LG(S) F &kp P         &ht BBIT B          
 //├────────────┼──────────────┼─────────────┼──────────────┼────────────┤                    ├─────────────┼──────────────┼─────────────┼───────────┼─────────────┤
 XXX   &hl_l 3 R    &hl_l 6 S      &hl_l 5 T   &hl_l 1 H     &hl_l 4 K                         &ra 0 X       &ht HYP_K N    &ht HYP_T A         &ab 0 I     &ht BULT O  XXX  
 //├────────────┼──────────────┼─────────────┼──────────────┼────────────┤                    ├─────────────┼──────────────┼─────────────┼───────────┼─────────────┤
-XXX   &hl_l 3 R    &as HYPER C    &kp G       &as MEH D     XXX                               XXX           &emd 0 M       &ht HYP_BSLH COMMA  &thh 0 DOT  XXX         XXX  
+XXX   XXX          &as HYPER C    &kp G       &as MEH D     XXX                               XXX           &emd 0 M       &ht HYP_BSLH COMMA  &thh 0 DOT  XXX         XXX  
 //└────────────┴──────────────┴─────────────┴─────┬────────┴───┬────────┘                    └───┬─────────┴───┬──────────┴─────────────┴───────────┴─────────────┘   
                                                XXX    XXX         &kp SPACE                &th_l 2 E  XXX XXX        
                                                // └────────────┴─────────────┘         └─────────┴─────────────┘ 
@@ -1182,7 +1182,7 @@ XXX   XXX          &kp BSPC     PLAINPASTE  XXX         XXX                     
 //├────────────┼────────────┼──────────┼───────────┼─────────┤                    ├───────────────┼─────────────┼─────────────┼───────────┼──────────┤
 XXX   &kp LSHFT    &kp LALT     &kp LGUI    XXX         REDO_TAB                      &kp LG(U)       &kp LEFT      &kp DOWN      &kp RIGHT      &kp TAB  XXX
 //├────────────┼────────────┼──────────┼───────────┼─────────┤                    ├───────────────┼─────────────┼─────────────┼───────────┼──────────┤
-XXX   &kp LSHFT    &kp LG(X)    &kp LG(C)   &kp LG(V)   XXX                           XXX             &kp LS(TAB)   &kp DEL       &kp LS(RET)    XXX      XXX     
+XXX   XXX          &kp LG(X)    &kp LG(C)   &kp LG(V)   XXX                           XXX             &kp LS(TAB)   &kp DEL       &kp LS(RET)    XXX      XXX     
 //└────────────┴────────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬───────────┴───┬─────────┴─────────────┴───────────┴──────────┘
                           XXX     ___          ___                            &kp LG(B)    ___     XXX            
                              // └────────────┴─────────┘                    └─────────┴───────────────┘
@@ -1195,11 +1195,11 @@ XXX   &kp LSHFT    &kp LG(X)    &kp LG(C)   &kp LG(V)   XXX                     
 // layer 2 - media - right thumb
 
 //┌─────────┬─────────┬──────────┬──────────────┬────────────┐                    ┌─────────┬──────────┬─────────────┬──────────────┬──────────┐
-XXX   XXX   &kp LS(LBKT)  &kp LS(RBKT) XXX          XXX                               XXX       &kp F4     &ht C_NEXT C_PP  V_UP       XXX XXX
+XXX   XXX   &kp LS(LBKT)  &kp LS(RBKT) XXX          XXX                               V_UP     &kp F4     &ht C_NEXT C_PP  XXX        XXX XXX
 //├─────────┼─────────┼──────────┼──────────────┼────────────┤                    ├─────────┼──────────┼─────────────┼──────────────┼──────────┤
-XXX   XXX   &kp LBKT      &kp RBKT     &kp LG(E)    XXX                               XXX       DELWORD    &kp BSPC         V_DN       XXX XXX    
+XXX   XXX   &kp LBKT      &kp RBKT     &kp LG(E)    XXX                               V_DN     DELWORD    &kp BSPC         &kp ESC    XXX XXX    
 //├─────────┼─────────┼──────────┼──────────────┼────────────┤                    ├─────────┼──────────┼─────────────┼──────────────┼──────────┤
-XXX   XXX   XXX           XXX          XXX          XXX                               XXX       XXX        B_DN             B_UP       XXX XXX
+XXX   XXX   XXX           XXX          XXX          XXX                               XXX      XXX        B_DN             B_UP       XXX XXX
 //└─────────┴─────────┴───┬──────┴─────┬────────┴───┬────────┘                    └───┬─────┴───┬──────┴─────────────┴──────────────┴──────────┘
                      XXX    ___         ___                           ___        ___      XXX
                        // └────────────┴─────────┘                    └─────────┴─────────┘
@@ -1247,9 +1247,9 @@ XXX   XXX       XXX       XXX        XXX         XXX                            
 //                                                                                     clean      streamline    profesh    exec - what is this?        
 
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-XXX   XXX       XXX       XXX        XXX         XXX                            XXX       &kp HYP_R  &kp HYP_G     &kp HYP_S   &kp HYP_SE XXX
+XXX   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        XXX           XXX         XXX        XXX
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-XXX   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        &kp ESC       XXX         XXX        XXX
+XXX   XXX       XXX       XXX        XXX         XXX                            XXX       &kp HYP_R  &kp HYP_G     &kp HYP_S   &kp HYP_SE XXX
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
 XXX   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        XXX           XXX         XXX        XXX
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
@@ -1280,7 +1280,7 @@ XXX   XXX       XXX       XXX        XXX         XXX                            
                 app_layer {
                         bindings = <                    
 
-// layer 7 - gemini transitions
+// layer 7 - NOT USED
 
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
 XXX   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        XXX           XXX         XXX        XXX
@@ -1301,11 +1301,11 @@ XXX   XXX       XXX       XXX        XXX         XXX                            
 // layer 8 - NOT USED - aerospace meh keys - left pinky
 
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-XXX   XXX       XXX       XXX        XXX         XXX                            MEH_Z     MEH_F      MEH_O         MEH_U       MEH_SE XXX
+XXX   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        XXX           XXX         XXX        XXX
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-XXX   XXX       &mo 9     MEH_S      MEH_T       XXX                            MEH_M     MEH_N      MEH_E         MEH_I       MEH_A  XXX
+XXX   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        XXX           XXX         XXX        XXX
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-XXX   XXX       XXX       XXX        XXX         XXX                            MEH_X     XXX        XXX           XXX         XXX    XXX
+XXX   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        XXX           XXX         XXX        XXX
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
                      XXX       ___          ___                            ___        ___  XXX    
                        // └────────────┴─────────┘                    └─────────┴─────────┘
