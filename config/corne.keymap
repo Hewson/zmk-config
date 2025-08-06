@@ -664,7 +664,7 @@
 // enter - return left
         combo_ret_l {
             timeout-ms = <COMBO_V_SLOW>;
-            key-positions = <26 15 16>;
+            key-positions = <14 15 28>;
             require-prior-idle-ms = <COMBO_FAST>;
             bindings = <&kp RET>;
         };
@@ -678,18 +678,34 @@
         };
 
 // esc left
-        combo_esc_l {
-            timeout-ms = <COMBO_FAST>;
-            key-positions = <3 15>;
-            require-prior-idle-ms = <50>;
+//        combo_esc_l {
+//            timeout-ms = <COMBO_FAST>;
+//            key-positions = <3 15>;
+//            require-prior-idle-ms = <50>;
+//            bindings = <&kp ESC>;
+//        };
+
+// esc right
+//        combo_esc_r {
+//            timeout-ms = <COMBO_FAST>;
+//            key-positions = <8 20>;
+//            require-prior-idle-ms = <50>;
+//            bindings = <&kp ESC>;
+//        };
+
+// esc left 2
+        combo_esc_l_2 {
+            timeout-ms = <COMBO_V_SLOW>;
+            key-positions = <13 14 15 16>;
+            require-prior-idle-ms = <COMBO_FAST>;
             bindings = <&kp ESC>;
         };
 
 // esc right
-        combo_esc_r {
-            timeout-ms = <COMBO_FAST>;
-            key-positions = <8 20>;
-            require-prior-idle-ms = <50>;
+        combo_esc_r_2 {
+            timeout-ms = <COMBO_V_SLOW>;
+            key-positions = <19 20 21 22>;
+            require-prior-idle-ms = <COMBO_FAST>;
             bindings = <&kp ESC>;
         };
 
